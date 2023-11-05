@@ -1,0 +1,86 @@
+/* Component */
+.deal-card{
+    width: 295px;
+    height: 410px;
+    background: #e7e6e2;
+    border: 3px solid #FFD972;
+    box-sizing:border-box;
+    border-radius: 8px 10px 8px 8px;
+    margin-right: 24px;
+  }
+  .deal-thumbnail{
+    display: flex;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+  }
+  .deal-thumbnail img{
+    width: 285px;
+    height: 218px;
+    object-fit: contain;
+  }
+  /* #product1{
+    width: 285px;
+    height: 218px;
+    align-self: center;
+  } */
+  .deal-info{
+    background: #fffae5;
+    height: 160px;
+    padding: 12px;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+  }
+  .top-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+    color: #767194;
+    /* padding: 10px 0px; */
+    margin-bottom: 8px;
+  }
+  .prod-name{
+    color: #44413D;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .prod-description{
+    color: #767194;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .prod-ship-info{
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .price-section{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    text-align: right;
+
+  }
+  .promotion-status{
+    line-height: 1;
+    font-size: 12px;
+  }
+  .price{
+    font-size: 16px;
+    line-height: 20px;
+
+  }
+  .old-price{
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #e34647;
+    text-decoration: line-through;
+  }
