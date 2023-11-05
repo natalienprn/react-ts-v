@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      {/* <h1>hello</h1> */}
+      <h1>hello</h1>
       <Routes>
         <Route path='/react-ts-v' element = {<Home />} />
         <Route path='/react-ts-v/info' element = {<Info />} />
