@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>hello</h1>
+      {/* <h1>hello</h1> */}
       <Routes>
         <Route path='/trademe-react-ts' element = {<Home />} />
         <Route path='/trademe-react-ts/info' element = {<Info />} />
