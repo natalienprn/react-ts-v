@@ -19,11 +19,7 @@
     line-height: 24px;
     padding: 0;
   }
-  .top-bar{
-    font-size: 12px;
-    color: #85808C;
-    background: #F6F5F4;
-  }
+  
   .container{
     display: block;
     width: 100%;
@@ -31,49 +27,8 @@
     position: relative;
   
   }
-  .top-bar, .navbar, .navbar-mp{
-    display:flex ;
-    height: 25px;
-    /* width: 100%; */
-  
-      flex-direction: row;
-  
-    justify-content: space-between;
-  }
-  .top-bar ul, .navbar ul, .navbar-mp ul{
-    list-style-type: none;
-    display: flex;
-    /* background: red; */
-    margin: 0;
-    padding: 0;
-    height: 20px;
-  
-  
-  }
-  .top-bar .top-bar-left{
-    margin-left: 15%;
-  }
-  
-  .top-bar-right ul{
-    float: right;
-  }
-  .top-bar-left li{
-    align-self: center;
-    padding: 5px 30px;
-  }
-  .top-bar-right li{
-    align-self: center;
-    padding: 5px 30px;
-  
-  }
-  .navbar, .navbar-mp{
-    height:56px;
-  color: #65605D;
-    align-items: center;
-    padding-left: 6%;
-    padding-right: 6%;
-    font-size: 13px;
-  }
+
+  /*  */
   #logo{
     height: 30px;
     width: auto;
