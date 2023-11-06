@@ -7,7 +7,12 @@ import {Link} from "react-router-dom"
 import DealCard from '../component/DealCard'
 import cardData from '../data/data'
 
-// import TrademeLogo from './trademe-logo.jpg';
+
+import TrademeLogo from '/trademe-logo.jpg';
+import Shoplogo from '/logo-shop.png';
+import shieldedsiteLogo from '/custom-logo.png';
+import facebookLogo from '/facebook-icon.svg';
+import twitterLogo from '/twitter-icon.svg';
 
 
 
@@ -51,7 +56,7 @@ function Home() {
           <div className='top-bar-left'>
             
             <ul>
-              <li><img id='logo' src='https://drive.google.com/file/d/1zTJJ2_RdFz4VVNbyuD402zCTl1dG61YJ/view?usp=sharing'/></li>
+              <li><img id='logo' src={TrademeLogo}/></li>
               <li>Browse</li>
               <li><input type='text' placeholder='Search all of Trade Me'></input> </li>
             </ul>

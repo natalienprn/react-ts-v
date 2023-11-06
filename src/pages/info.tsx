@@ -2,7 +2,7 @@
 import './info.css'
 import {Link} from "react-router-dom"
 
-import TrademeLogo from './trademe-logo.jpg';
+import TrademeLogo from '/trademe-logo.jpg';
 import Shoplogo from '/logo-shop.png';
 import shieldedsiteLogo from '/custom-logo.png';
 import facebookLogo from '/facebook-icon.svg';
