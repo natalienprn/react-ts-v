@@ -13,8 +13,8 @@ function App() {
     <>
     <h1>Hello</h1>
     <Routes>
-        <Route path='/react-ts-v' element = {<Home />} />
-        <Route path='/react-ts-v/info' element = {<Info />} />
+        <Route path='/' element = {<Home />} />
+        <Route path='/info' element = {<Info />} />
 
       </Routes>
 
