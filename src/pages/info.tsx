@@ -48,7 +48,7 @@ function Info() {
           <div className='top-bar-left'>
             
             <ul>
-              <li><img id='logo' src='https://drive.google.com/file/d/1zTJJ2_RdFz4VVNbyuD402zCTl1dG61YJ/view?usp=sharing'/></li>
+              <li><img id='logo' src='https://photos.app.goo.gl/7Gknj25mJk7vzwFt8'/></li>
               <li>Browse</li>
               <li><input type='text' placeholder='Search all of Trade Me'></input> </li>
             </ul>
@@ -85,11 +85,11 @@ function Info() {
         <div className='main-content'>
           <div className='product-info'>
             <div className='photo-screen'>
-              <img src='./couch1.jpg'/>
+              <img src='https://photos.app.goo.gl/Y5LPgAd6ctSFgbeN9'/>
             </div>
             <div className='photo-list'>
               <div className='photo-single'>
-                <img src='https://drive.google.com/file/d/1b8uH6inEh33Nob5dyVfjChdtivMDG4sb/view?usp=sharing'/>
+                <img src='https://photos.app.goo.gl/Y5LPgAd6ctSFgbeN9'/>
               </div> 
             </div>
             <div className='info-body'>
@@ -278,7 +278,7 @@ function Info() {
                     <td>
                       <div className='about-store'>
                         <div className='shop-logo'>
-                          <img src='https://drive.google.com/file/d/1OMUkNi_iMGmo9CIN5h3hoBOvBEEnfKo9/view?usp=sharing'/>  
+                          <img src='https://photos.app.goo.gl/jHhZidaLqeFCWJmS6'/>  
                         </div>     
                         <div className='about-store-info'>
                           <h3>furniturestore1</h3>
@@ -327,7 +327,7 @@ function Info() {
 
           <div className='product-buyer-option'>
             <div className='shop-logo'>
-              <img src='https://drive.google.com/file/d/1OMUkNi_iMGmo9CIN5h3hoBOvBEEnfKo9/view?usp=sharing'/>
+              <img src='https://photos.app.goo.gl/jHhZidaLqeFCWJmS6'/>
             </div>
             
             <div className='product-name'>
@@ -377,7 +377,7 @@ function Info() {
         <div className='footer-content'>
           <div className='footer-content-top'>
             <ul>
-              <li><img id='logo' src='https://drive.google.com/file/d/1zTJJ2_RdFz4VVNbyuD402zCTl1dG61YJ/view?usp=sharing'/></li>
+              <li><img id='logo' src='https://photos.app.goo.gl/7Gknj25mJk7vzwFt8'/></li>
               <li>List an item</li>
               <li>Watchlist</li>
               <li>Favourites</li>
@@ -446,10 +446,10 @@ function Info() {
                 <li>Terms & conditions</li>
                 <li>Contact Us</li>
               </ul>
-              <li><img className='footer-icon' src='https://drive.google.com/file/d/1pESDEP3G6Nbghz3D1_Av0sb0Wi0CxKc_/view?usp=sharing'/></li>
+              <li><img className='footer-icon' src='https://photos.app.goo.gl/D44H45n1u2AxDwR57'/></li>
               <ul>
-                <li><img className='footer-icon' src='https://drive.google.com/file/d/1wOfV6YpFZETCuR6aFexmzI6utuslyYyd/view?usp=sharing'/></li>
-                <li><img className='footer-icon' src='https://drive.google.com/file/d/1TZ6ZVoKJqX-pVDky0aLyDE_99oZvGdq5/view?usp=sharing'/></li>
+                <li><img className='footer-icon' src='https://photos.app.goo.gl/Yep6fM5BFawY3c948'/></li>
+                <li><img className='footer-icon' src='https://photos.app.goo.gl/D44H45n1u2AxDwR57'/></li>
               </ul>
             </ul>
           </div>
