@@ -2,6 +2,9 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import { Route, Routes} from "react-router-dom"
+import Home from "./pages/home"
+import Info from "./pages/info"
 
 function App() {
 //   const [count, setCount] = useState(0)
@@ -9,6 +12,12 @@ function App() {
   return (
     <>
     <h1>Hello</h1>
+    <Routes>
+        <Route path='/react-ts-v' element = {<Home />} />
+        <Route path='/react-ts-v/info' element = {<Info />} />
+
+      </Routes>
+
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
