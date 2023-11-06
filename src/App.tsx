@@ -2,9 +2,9 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import { Route, Routes} from "react-router-dom"
-import Home from "./pages/home"
-import Info from "./pages/info"
+// import { Route, Routes} from "react-router-dom"
+// import Home from "./pages/home"
+// import Info from "./pages/info"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <h1>hello</h1>
-      <Routes>
+      {/* <Routes>
         <Route path='/react-ts-v' element = {<Home />} />
         <Route path='/react-ts-v/info' element = {<Info />} />
 
-      </Routes>
+      </Routes> */}
     </>
   )
 }
