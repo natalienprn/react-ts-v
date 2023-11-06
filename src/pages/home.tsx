@@ -9,10 +9,7 @@ import cardData from '../data/data'
 
 
 import TrademeLogo from '/trademe-logo.jpg';
-import Shoplogo from '/logo-shop.png';
-import shieldedsiteLogo from '/custom-logo.png';
-import facebookLogo from '/facebook-icon.svg';
-import twitterLogo from '/twitter-icon.svg';
+
 
 
 
