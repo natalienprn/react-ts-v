@@ -1,0 +1,74 @@
+
+.footer{
+  
+    width: 100%;
+    border-top: 8px solid #d93a3f;
+    /* position:absolute;
+    bottom: 0; */
+  }
+  .footer-content{
+    padding: 24px 128px 0px 128px;
+    color: #85808C;
+  }
+  .footer-content-top{
+    padding-bottom: 24px;
+    border-bottom: 1px solid #D7D5D2;
+    font-size: 13px;
+  }
+  .footer-content-top ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-content-top ul li{
+    width: 16.67%;
+    align-self: center;
+  }
+  .footer-content-top ul li ul{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .footer-content-top ul li ul li{
+    margin-right: 16px;
+    width: fit-content;
+  }
+  .footer-main{
+    display: flex;
+    font-size: 12px;
+    height: 168px;
+  
+  
+  }
+  .footer-main ul{
+    width: 16.67%;
+    list-style-type: none;
+    padding: 24px 0;
+  }
+  .footer-list-heading{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .footer-bottom{
+    font-size: 12px;
+    padding: 24px 8.71%;
+    background: #F6F5F4;
+    
+  }
+  .footer-bottom ul{
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-bottom ul ul li{
+    margin-right: 10px;
+  }
+  .footer-icon{
+    width: 24px;
+    height: 24px;
+  }
+  

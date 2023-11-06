@@ -7,6 +7,7 @@ import'./home.css'
 import DealCard from '../component/DealCard'
 import cardData from '../data/data'
 import TopBar from '../component/TopBar'
+import FooterBlock from '../component/FooterBlock'
 
 
 // import TrademeLogo from '/trademe-logo.jpg';
@@ -117,9 +118,7 @@ function Home() {
         <div className='popular-search'>
        
         </div>
-        <div className='footer'>
-
-          </div>
+        <FooterBlock />
       </div>
         </>
   )
