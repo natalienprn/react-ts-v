@@ -31,7 +31,7 @@ export interface CardData {
     destination: string;
     price: string;
   }
-const cardData: cardData[] = [
+const cardData: CardData[] = [
     {
         id: '1',
         productName: 'Brand New Currumbin Velvet Fabric Corner Lounge Suite',
@@ -49,6 +49,7 @@ const cardData: cardData[] = [
     memory:'',
     hardDriveSize:'',
     cores: '',
+    color: '',
     brand: 'John Young Furniture',
     fullDescription: [
          'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
@@ -100,6 +101,10 @@ const cardData: cardData[] = [
         shopName: 'string',
         condition: 'new',
     color:'Charcoal',
+    memory:'',
+    hardDriveSize:'',
+    cores: '',
+    brand: '',
         fullDescription: [
             'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
             'Handcrafted in New Zealand using excellent quality materials, this Lounge Suite features large seating areas perfect for families who love to entertain or relax together.',
@@ -146,6 +151,10 @@ const cardData: cardData[] = [
         condition: 'new',
     color:'Grey',
     brand: 'Berkley Furniture',
+    memory:'',
+    hardDriveSize:'',
+    cores: '',
+
          
     fullDescription: [
         'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
@@ -179,6 +188,10 @@ const cardData: cardData[] = [
         shopName: 'string',
         condition: 'new',
     color:'Grey',
+    memory:'',
+    hardDriveSize:'',
+    cores: '',
+    brand: '',
     fullDescription:[
         'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
         'Bring simplicity and style into your Living Area with this sleek and modern Webber 3+2 seater Lounge Suite. This masterpiece design makes it perfect for modern family homes.',
@@ -226,6 +239,10 @@ const cardData: cardData[] = [
         shopName: 'string',
         condition: 'New',
         brand: 'GROHE',
+        memory:'',
+        hardDriveSize:'',
+        cores: '',
+        color:'',
         fullDescription: [
             'GROHE SENSIA ARENA WALL MOUNTED SHOWER TOILET',
             'GROHE Sensia Arena stands for Intelligent Care. Enjoy innovative functions that are tailored to your personal needs. More comfortable, hygienic and soothing than using paer, with the GROHE Sensia Arena you can experience a new standard of personal hygiene.',
@@ -277,11 +294,12 @@ const cardData: cardData[] = [
         currentPrice: '$1,500',
         link: '/info',
         shopName: 'string',
-        Condition:'New',
-        Memory:'16 to 31 GB',
+        condition:'New',
+        memory:'16 to 31 GB',
         hardDriveSize:'500 to 999 GB',
-        Cores:'8',
-        Brand:'HP',
+        cores:'8',
+        brand:'HP',
+        color:'',
         fullDescription: [
             'HP Z2 Mini G4 Workstation</br>Intel Core i7-9700 Processor (8 core - 4.7Ghz)</br>16GB Memory (upgradable to 64GB)</br>NVIDIA® Quadro® P1000 (4 GB GDDR5 dedicated)</br>512GB NVMe Turbo Drive (Up to 5x faster than SATA SSD)</br>Intel Gigabit LAN</br>Windows 10 Professional</br>Logitech Z150 Stereo Speakers (integrated sound is scratchy so we are supplying brand new external speakers)',
             'Triple Monitor (Screen) Support with 3 x DisplayPort\'s</br>You can purchase DisplayPort to HDMI, DVI or VGA adapters from any retail computer store for as low as $10ea',
@@ -311,6 +329,11 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'new',
+        memory:'',
+        hardDriveSize:'',
+        cores: '',
+        brand: '',
+        color:'',
         fullDescription: [
             'Design: Combine storage cabinet and book display rack together, the sliding door can easily slide from left to the right, or right to the left or in the middle. 3 tier front-facing presentation spaces for books and magazines display. Behind the sliding door bookshelf is 6 storage cabinet, which can store books, toys, art collections, decorations and storage boxes.',
             'Material: Made of high quality EO grade solid wood ecological board, environmentally friendly, tasteless, ready to use, strong and wear-resistant, and stainless steel round rod for magazine and book holders. This cabinet is sturdy, smart and durable.',
@@ -349,6 +372,10 @@ const cardData: cardData[] = [
         shopName: 'string',
         condition: 'new',
         brand: 'Sofacreations',
+        memory:'',
+        hardDriveSize:'',
+        cores: '',
+        color:'',
         fullDescription: [
             'The beautiful Moon Sofa by Sofacreations. This stylish, Organic in shape and sculptural sofa is exquisitely upholstered in a gorgeous, Ovis Ivory fabric from Warwick, a sublime seating arrangement that will redefine both modern and traditional interiors. It can smartly divide large, open-plan living areas.',
             'Model: Moon Sofa and Ottoman',
