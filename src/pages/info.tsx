@@ -1,12 +1,12 @@
-// import { useState } from 'react'
+
 import './info.css'
-// import {Link} from "react-router-dom"
+
 import React from 'react';
 
 import Shoplogo from '/logo-shop.png';
 import TopBar from '../component/TopBar';
 import FooterBlock from '../component/FooterBlock';
-import cardData, { CardData } from '../data/data';
+import { CardData } from '../data/data';
 import { useParams } from 'react-router-dom';
 import ShippingIcon from '/icon/shipping-icon.png';
 import GpsIcon from '/icon/gps-icon.png';

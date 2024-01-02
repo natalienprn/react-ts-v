@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface BrowseItem{
   id: number;
   item: string;

@@ -1,78 +1,65 @@
-.carousel-wrapper{
+.carousel-wrapper {
     position: relative;
     width: 100%;
 
 }
 
-.carousel{
+.carousel {
     display: flex;
-
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
     position: relative;
 }
 
-.arrow-left, .arrow-right{
+.arrow-left,
+.arrow-right {
     position: absolute;
     top: 50%;
     z-index: 1500;
     width: 50px;
-        height: 50px;
-        cursor: pointer;
-    
-    /* width: 24px; */
-    /* display: flex;
-    justify-content: space-between; */
+    height: 50px;
+    cursor: pointer;
 }
-.arrow-left img, .arrow-right img{
+
+.arrow-left img,
+.arrow-right img {
     width: 24px;
-/*     
-    z-index: 2000; */
-   
 }
-.arrow-left{
+
+.arrow-left {
     left: -50px;
-    
 }
-.arrow-right{
+
+.arrow-right {
     right: -50px;
 }
 
-button{
+button {
     font-size: 20px;
-    /* cursor: pointer; */
     background: none;
     border: none;
 }
-@media only screen and (max-width: 1280px){
-    .arrow-left img, .arrow-right img{
-        /* z-index: 999; */
+
+@media only screen and (max-width: 1280px) {
+
+    .arrow-left img,
+    .arrow-right img {
+
         background-color: rgba(169, 169, 169, 0.5);
- 
         width: 50px;
         height: 50px;
-        /* position:fixed ; */
         z-index: 9999;
-        /* transform: translateY(-50%); */
         top: calc(50% - 25px);
     }
 
-    .arrow-left, .arrow-left img{
-        /* position: fixed; */
-        /* z-index: 9999; */
+    .arrow-left,
+    .arrow-left img {
         left: 0px;
-        /* width: 50px;
-        height: 50px; */
-        
     }
-    .arrow-right, .arrow-right img{
-        /* position: fixed; */
-        /* z-index: 9999; */
-        /* right: 10%; */
-        /* width: 50px;
-        height: 50px; */
+
+    .arrow-right,
+    .arrow-right img {
         left: auto;
     }
-    
-  }
-  
+
+}

@@ -2,19 +2,14 @@
 import { FormEvent, useState } from 'react'
 import './info.css'
 import'./home.css'
-// import {Link} from "react-router-dom"
 
-import DealCard from '../component/DealCard'
 import cardData from '../data/data'
 import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
 import CateItem from '../data/catelist'
 import Carousel from '../component/Carousel'
 
-import IconSearchBlock from '/icon/find.png';
 
-
-// import TrademeLogo from '/trademe-logo.jpg';
 
 
 function Home() {
