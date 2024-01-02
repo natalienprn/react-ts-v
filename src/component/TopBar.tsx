@@ -9,8 +9,10 @@ import TrademeLogo from '/trademe-logo.jpg';
 
 const TopBar= ()=>{
     return(
-        <div className='topbar'>
+
+        <div className='wrapper'>
        {/* top-bar1 */}
+       <div className='wrapper-topbar'>
         <div className='top-bar'>
           <div className='top-bar-left'>
             <ul>
@@ -29,6 +31,7 @@ const TopBar= ()=>{
             </ul>
           </div>    
         </div>
+        </div>
         {/* top-bar2 */}
         <div className='navbar'>
           <div className='navbar-left'>
@@ -39,7 +42,7 @@ const TopBar= ()=>{
               <li><input type='text' placeholder='Search all of Trade Me'></input> </li>
             </ul>
           </div>
-          <div className='top-bar-right'>
+          <div className='navbar-right'>
             <ul>
               <li>Watchlist</li>
               <li>Favourites</li>
@@ -49,13 +52,14 @@ const TopBar= ()=>{
           </div>    
         </div>
         {/* navbar - marketplace */}
+        <div className='wrapper-navbar-mp'>
         <div className='navbar-mp'>
           <div className='navbar-left'>
             <ul>
               <li><Link className='router-link' to='/'> Browse Marketplace</Link></li>
-              <li>Stores</li>
-              <li>Deals</li>
-              <li>Book a courier</li>
+              <li className='navbar-hidden'>Stores</li>
+              <li className='navbar-hidden'>Deals</li>
+              <li className='navbar-hidden'>Book a courier</li>
             </ul>
           </div>
           <div className='top-bar-right'>
@@ -63,6 +67,7 @@ const TopBar= ()=>{
               <li>List an item</li>
             </ul>
           </div>
+        </div>
         </div>
         </div>
         
