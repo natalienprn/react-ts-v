@@ -33,55 +33,67 @@ const FooterBlock= ()=>{
               </li>
             </ul>
           </div>
-          <div className='footer-main'>
-            <ul>
-              <li><span style={{color: '#D93A3F'}} className='footer-list-heading'>Marketplace</span></li>
-              <li>Latest deals</li>
-              <li>Stores</li>
-              <li>Closing soon</li>
-              <li>$1 reserve</li>
-            </ul>
-            <ul>
-              <li><span style={{color: '#F5632D'}} className='footer-list-heading'>Jobs</span></li>
-              <li>Browse categories</li>
-              <li>Careers advice</li>
-              <li>JobSmart</li>
-              <li>Advertisers advice</li>
-            </ul>
-            <ul>
-              <li><span style={{color: '#5F6F88'}} className='footer-list-heading'>Motors</span></li>
-              <li>Browse all cars</li>
-              <li>Other vehicles</li>
-              <li>Buying & Selling</li>
-              <li>Dealer news & info</li>
-            </ul>
-            <ul>
-              <li><span style={{color: '#29A754'}} className='footer-list-heading'>Property</span></li>
-              <li>Looking to sell?</li>
-              <li>News & guides</li>
-              <li>Homes.co.nz</li>
-              <li>OneHub for agents</li>
-            </ul>
-            <ul>
-              <li><span style={{color: '#555555'}} className='footer-list-heading'>Services</span></li>
-              <li>Trades</li>
-              <li>Domestic services</li>
-              <li>Events & entertainment</li>
-              <li>Health & wellbeing</li>
-            </ul>
-            <ul>
-              <li><span style={{color: '#148FE2'}} className='footer-list-heading'>Community</span></li>
-              <li>Help</li>
-              <li>Announcements</li>
-              <li>Trust & safety</li>
-              <li>Seller information</li>
-            </ul>
+          <div className='footer-main'>        
+            <div className='half-footer-list'>
+              {/* first col */}
+                <div className='footer-col'>
+                  <div style={{color: '#D93A3F'}} className='footer-list-heading'>Marketplace</div>
+                  <div className='footer-list'>Latest deals</div>
+                  <div className='footer-list'>Stores</div>
+                  <div className='footer-list'>Closing soon</div>
+                  <div className='footer-list'>$1 reserve</div>
+                </div>
+                {/* second col */}
+                <div className='footer-col'>
+                  <div style={{color: '#F5632D'}} className='footer-list-heading'>Jobs</div>
+                  <div className='footer-list'>Browse categories</div>
+                  <div className='footer-list'>Careers advice</div>
+                  <div className='footer-list'>JobSmart</div>
+                  <div className='footer-list'>Advertisers advice</div>
+                </div>
+                {/* third col */}
+                <div className='footer-col'>
+                  <div style={{color: '#5F6F88'}} className='footer-list-heading'>Motors</div>
+                  <div className='footer-list'>Browse all cars</div>
+                  <div className='footer-list'>Other vehicles</div>
+                  <div className='footer-list'>Buying & Selling</div>
+                  <div className='footer-list'>Dealer news & info</div>
+                </div>
+            </div>
+            <div className='half-footer-list'>
+              {/* first col */}
+                <div className='footer-col'>
+                  <div style={{color: '#29A754'}} className='footer-list-heading'>Property</div>
+                  <div className='footer-list'>Looking to sell?</div>
+                  <div className='footer-list'>News & guides</div>
+                  <div className='footer-list'>Homes.co.nz</div>
+                  <div className='footer-list'>OneHub for agents</div>
+                </div>
+                {/* second col */}
+                <div className='footer-col'>
+                  <div style={{color: '#555555'}} className='footer-list-heading'>Services</div>
+                  <div className='footer-list'>Trades</div>
+                  <div className='footer-list'>Domestic services</div>
+                  <div className='footer-list'>Events & entertainment</div>
+                  <div className='footer-list'>Health & wellbeing</div>
+                </div>
+                {/* third col */}
+                <div className='footer-col'>
+                  <div style={{color: '#148FE2'}} className='footer-list-heading'>Community</div>
+                  <div className='footer-list'>Help</div>
+                  <div className='footer-list'>Announcements</div>
+                  <div className='footer-list'>Trust & safety</div>
+                  <div className='footer-list'>Seller information</div>
+                </div>
+            </div>
           </div>
           
         </div>
         <div className='footer-bottom'>
-            <ul>
-              <li>@2023 Trade Me Limited</li>
+           <div className='footer-under'>
+              @2023 Trade Me Limited
+            </div>
+              <div className='footer-above'>
               <ul>
                 <li>Desktop site</li>
                 <li>About us</li>
@@ -91,12 +103,16 @@ const FooterBlock= ()=>{
                 <li>Terms & conditions</li>
                 <li>Contact Us</li>
               </ul>
-              <li><img className='footer-icon' src={shieldedsiteLogo}/></li>
-              <ul>
+              </div>
+              <div className='footer-under-middle'> <img className='footer-icon' src={shieldedsiteLogo}/></div>
+              <div className='footer-under'>
+                <ul>
                 <li><img className='footer-icon' src={facebookLogo}/></li>
                 <li><img className='footer-icon' src={twitterLogo}/></li>
               </ul>
-            </ul>
+              </div>
+              
+            
           </div>
       {/* </footer> */}
       </div>

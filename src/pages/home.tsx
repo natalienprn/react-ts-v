@@ -8,15 +8,13 @@ import DealCard from '../component/DealCard'
 import cardData from '../data/data'
 import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
+import CateItem from '../data/catelist'
+import Carousel from '../component/Carousel'
+
+import IconSearchBlock from '/icon/find.png';
 
 
 // import TrademeLogo from '/trademe-logo.jpg';
-
-
-
-
-
-
 
 
 function Home() {
@@ -32,6 +30,7 @@ function Home() {
     <>
       <div className='container'>
         <TopBar />
+        
         <div className='banner-top'>
             Shop new & used items
             <br/>
@@ -47,10 +46,12 @@ function Home() {
                         (Optional)
                   </span>
                 </label>
-                <input type='text' 
+                
+                <input className='input' type='text' 
                 value={keyword} 
                 onChange={(e) => setKeyword(e.target.value)}
-                placeholder='Search by keyword'></input>
+                placeholder= 'Search by keyword'></input>
+                {/* <img src={IconSearchBlock} className='search-icon-inside'/> */}
               </div>
               <div className='search-by-cate'>
                 <label className='search-heading'>
@@ -60,8 +61,10 @@ function Home() {
                   </span>
                 </label>
               <select name='category' id='category'>
-                <option value={0}>All Categories</option>
-                <option value={0}>Home & Living</option>
+                {CateItem.map((item) => (
+                  <option key= {item.id} value={item.id}>{item.item}</option>
+                ))}
+      
               </select>
 
               </div>
@@ -71,30 +74,17 @@ function Home() {
             </form>
           </div>
           <div className='search-section-footer'>
-            <a href='#' className='get-app'>Get the Trade Me iOS app  </a>
-            <a href='#' className='get-app'>Get the Trade Me Android app</a>
+            <a href='https://apps.apple.com/nz/app/trade-me-buy-sell/id392567559' target="_blank" className='get-app'>Get the Trade Me iOS app  </a>
+            <a href='https://play.google.com/store/apps/details?id=nz.co.trademe.trademe&referrer=utm_source%3Dtm%26utm_medium%3Dnewtm&pli=1' target='_blank' className='get-app'>Get the Trade Me Android app</a>
           </div>
         </div>
         <div className='categories'>
           <div className='cate-list'>
             <ul>
-              <li>Antiques & collectables</li>
-              <li>Baby gear</li>
-              <li>Books</li>
-              <li>Building & renovation</li>
-              <li>Business, farming & industry</li>
-              <li>Clothing & Fashion</li>
-              <li>Computers</li>
-              <li>Electronics & photography</li>
-              <li>Gaming</li>
-              <li>Health & beauty</li>
-              <li>Home & living</li>
-              <li>Jewellery & watches</li>
-              <li>Mobile phones</li>
-              <li>Music & instruments</li>
-              <li>Pets & animals</li>
-              <li>Sports</li>
-              <li>Toys & models</li>
+
+              {CateItem.slice(1).map((item) => (
+                <li key={item.id}>{item.item}</li>
+              ))}
 
             </ul>
           </div>
@@ -107,16 +97,54 @@ function Home() {
           </div>
           <div className='deals-list'>
             
-            {cardData.map((item, index)=>(
+            {/* {cardData.map((item, index)=>(
               <DealCard key={index} data={item}/>
             ))}
-   
+    */}
+            <Carousel cardData={cardData}/>
           </div>
           
         </div>
         
         <div className='popular-search'>
-       
+        <div className='topic'>Popular Searches</div> 
+        <div className='col-lists'>
+          <div className='half-col-list'>
+            {/* first col */}
+              <div className='popular-col'>
+                <div className='popular-col-title'>Pets and animals</div>
+                <div className='popular-list'>Dogs for sale</div>
+                <div className='popular-list'>Puppies for sale</div>
+                <div className='popular-list'>LiveStock</div>
+              </div>
+              {/* second col */}
+              <div className='popular-col'>
+                <div className='popular-col-title'>Home and outdoors</div>
+                <div className='popular-list'>Furniture</div>
+                <div className='popular-list'>Outdoor furniture</div>
+                <div className='popular-list'>Fence posts & timber</div>
+              </div>
+          </div>
+          <div className='half-col-list'>
+            {/* third col */}
+              <div className='popular-col'>
+                <div className='popular-col-title'>Tech and leisure</div>
+                <div className='popular-list'>iPhone</div>
+                <div className='popular-list'>Mountain bike</div>
+                <div className='popular-list'>Nintendo switch</div>
+                <div className='popular-list'>Women's shoes</div>
+              </div>
+              {/* last col */}
+              <div className='popular-col'>
+                <div className='popular-col-title'>Other</div>
+                <div className='popular-list'>Flatmates wanted</div>
+                <div className='popular-list'>Car parts & accessories</div>
+              </div>
+          </div>
+        </div>
+          
+          
+              
         </div>
         <FooterBlock />
       </div>

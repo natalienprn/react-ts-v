@@ -1,86 +1,153 @@
 /* Component */
+.deal-card-container{
+  display: flex;
+  width: calc(100% - 18px);
+  /* height: 402.4px; */
+  height: 475px;
+}
 .deal-card{
-    width: 295px;
-    height: 410px;
-    background: #e7e6e2;
-    border: 3px solid #FFD972;
-    box-sizing:border-box;
-    border-radius: 8px 10px 8px 8px;
+  width: 264px;
+  /* height: 410px; */
+  /* height: 100%; */
+  height: 430px;
+
+  background: #e7e6e2;
+  border: 3px solid #FFD972;
+  box-sizing:border-box;
+  border-radius: 8px 10px 8px 8px;
+  margin-right: 16px;
+  
+}
+.deal-thumbnail{
+  display: flex;
+  height: 220px;
+  justify-content: center;
+  align-items: center;
+}
+.deal-thumbnail img{
+  /* width: 285px; */
+  width: 100%;
+  height: 218px;
+  object-fit: contain;
+}
+/* #product1{
+  width: 285px;
+  height: 218px;
+  align-self: center;
+} */
+.deal-info{
+  background: #fffae5;
+  /* height: 160px; */
+  height: 180px;
+  padding: 12px;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+}
+.top-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  color: #767194;
+  /* padding: 10px 0px; */
+  margin-bottom: 8px;
+}
+.prod-name{
+  color: #44413D;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+.prod-description{
+  color: #767194;
+  line-height: 20px;
+  font-size: 14px;
+}
+.prod-ship-info{
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+}
+.prod-ship-info img{
+  width: 20px;
+  align-self:self-end;
+  padding-right: 4px;
+  /* height: 16px; */
+}
+.price-section{
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  text-align: right;
+
+}
+.promotion-status{
+  line-height: 1;
+  font-size: 12px;
+}
+.price{
+  font-size: 16px;
+  line-height: 20px;
+
+}
+.old-price{
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #e34647;
+  text-decoration: line-through;
+}
+
+@media only screen and (min-width: 768px){
+  .deal-card{
+    /* min-width: 256px;
+    max-width: 256px; */
+    width: 256px;
+    
     margin-right: 24px;
+ 
+    flex-grow: 0;
+    flex-shrink: 0;
   }
-  .deal-thumbnail{
-    display: flex;
-    height: 220px;
-    justify-content: center;
-    align-items: center;
+
+}
+@media only screen and (min-width: 1280px){
+  .deal-card{
+    /* max-width: none; */
+    /* flex-basis: calc(100%  18px); */
+    width: 100%;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
   .deal-thumbnail img{
-    width: 285px;
-    height: 218px;
-    object-fit: contain;
+    width: calc(20vw - 22px);
   }
-  /* #product1{
-    width: 285px;
-    height: 218px;
-    align-self: center;
-  } */
-  .deal-info{
-    background: #fffae5;
-    height: 160px;
-    padding: 12px;
-    border-radius: 0 0 8px 8px;
-    position: relative;
+}
+@media only screen and (min-width: 1327px){
+  
+  .deal-info {
+    height: 173px;
   }
-  .top-info{
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    line-height: 16px;
-    color: #767194;
-    /* padding: 10px 0px; */
-    margin-bottom: 8px;
+}
+@media only screen and (min-width: 1600px){
+  .deal-card, .deal-card-container{
+    max-width: 300px; 
+    flex-basis: calc(100% - 18px);
+    /* height: calc(27vw + 7px); */
+    height: 437px;
   }
-  .prod-name{
-    color: #44413D;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+  .deal-info {
+    height: 173px;
   }
-  .prod-description{
-    color: #767194;
-    line-height: 20px;
-    font-size: 14px;
+  .deal-thumbnail img{
+    max-width: 260px;
+    width: calc(20vw - 50px);
   }
-  .prod-ship-info{
-    margin-top: 8px;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .price-section{
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    text-align: right;
-
-  }
-  .promotion-status{
-    line-height: 1;
-    font-size: 12px;
-  }
-  .price{
-    font-size: 16px;
-    line-height: 20px;
-
-  }
-  .old-price{
-    font-size: 12px;
-    line-height: 16px;
-    position: relative;
-    display: inline-block;
-    margin-right: 8px;
-    margin-bottom: 0;
-    font-weight: 700;
-    color: #e34647;
-    text-decoration: line-through;
-  }
+}

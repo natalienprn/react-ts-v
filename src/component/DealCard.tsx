@@ -3,14 +3,17 @@ import './DealCard.css';
 import { Link } from 'react-router-dom';
 import { CardData } from '../data/data';
 
+import shippingIcon from '/icon/shipping-96.png';
+
 interface DealCardProps{
     data: CardData;
 }
 
 const DealCard: React.FC<DealCardProps> = ({data})=>{
     return(
-        <Link to={data.link}>
-        <div className='deal-card'>
+        // <Link to={data.link}>
+          <div className='deal-card-container'>
+            <div className='deal-card'>
               <div className='deal-thumbnail'>
                 <img src={data.productImg}/> 
               </div>
@@ -29,9 +32,13 @@ const DealCard: React.FC<DealCardProps> = ({data})=>{
                 <div className='prod-description'>
                   {data.description}
                 </div>
-                <div className='prod-ship-info'>
+                {data.shippingInfo && (
+                  <div className='prod-ship-info'>
+                    <img src={shippingIcon}/>
                   {data.shippingInfo}
                 </div>
+                )}
+                
                 <div className='price-section'>
                   <div className='promotion-status'>
                     {data.proStatus}
@@ -43,7 +50,9 @@ const DealCard: React.FC<DealCardProps> = ({data})=>{
                 </div>
               </div>
             </div>
-            </Link>
+          </div>
+        
+            // </Link>
     );
 };
 export default DealCard
