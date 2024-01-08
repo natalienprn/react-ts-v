@@ -405,4 +405,4 @@ const cardData: CardData[] = [
 
 
 ];
-export default CardData;
+export default cardData;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './DealCard.css';
-import { Link } from 'react-router-dom';
 import { CardData } from '../data/data';
 
 import shippingIcon from '/icon/shipping-96.png';
@@ -15,7 +14,7 @@ const DealCard: React.FC<DealCardProps> = ({data})=>{
           <div className='deal-card-container'>
             <div className='deal-card'>
               <div className='deal-thumbnail'>
-                <img src={data.productImg}/> 
+                <img src={data.productImg[0]}/> 
               </div>
               <div className='deal-info'>
                 <div className='top-info'>
