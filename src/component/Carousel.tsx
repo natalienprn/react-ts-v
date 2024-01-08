@@ -9,7 +9,7 @@ import { CardData } from "../data/data";
 
 
 interface CarouselProps {
-    cardData: CardData
+    cardData: CardData[];
 
 }
 
