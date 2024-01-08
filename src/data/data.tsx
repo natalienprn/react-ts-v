@@ -16,73 +16,75 @@ export interface CardData {
     shopName: string;
 
     condition: string;
-    memory:string;
-    hardDriveSize:string;
+    memory: string;
+    hardDriveSize: string;
     cores: string;
     brand: string;
     color: string;
 
-    fullDescription:string[];
+    fullDescription: string[];
     shippingPrice: ShippingPrice[];
 
-  }
-  
-  interface ShippingPrice{
+}
+
+interface ShippingPrice {
     destination: string;
     price: string;
-  }
-const cardData: cardData[] = [
+}
+const cardData: CardData[] = [
     {
         id: '1',
         productName: 'Brand New Currumbin Velvet Fabric Corner Lounge Suite',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2066301121.jpg'],
         description: 'Viewing across locations - Auckland & Hamilton',
-        city:'Canterbury',
-        closeDate:'Sat, 16 Sep',
+        city: 'Canterbury',
+        closeDate: 'Sat, 16 Sep',
         shippingInfo: 'Free shipping',
         proStatus: 'Buy Now',
         oldPrice: '$4,989',
         currentPrice: '$3,899',
         link: '/info',
         shopName: 'string',
-    condition: 'new',
-    memory:'',
-    hardDriveSize:'',
-    cores: '',
-    brand: 'John Young Furniture',
-    fullDescription: [
-         'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
-        'Experience modern luxury with the Currumbin Corner Lounge Suite by John Young Furniture.',           
-        'This exquisite 5-seat modular lounge suite is designed to elevate your living space with its sleek and contemporary style. The suite includes 3 scatter cushions, adding a touch of elegance to the overall design.',
-        'The Currumbin Lounge Suite features a unique t-cushion design with vertical stitching, creating a visually appealing look on the suite back, sides, and base. The plush feather and foam seating provides exceptional comfort, allowing you to relax and unwind in style.', 
-        'Upholstered in silky velvet fabric, the Currumbin Lounge Suite is available in the sophisticated Shadow color, adding a touch of sophistication to any room. Upgrade your living room with the Currumbin Corner Lounge Suite and indulge in the perfect blend of comfort and style.', 
-        'Dimensions (mm): </br> 2.5/S LHF - 1900 x 1010 x 900</br>CNR/W - 1030 x 1030 x 900</br>2.5/S RHF - 1900 x 1010 x 900',
-        'Warranty:',
-        '1 year fabric', 
-        '3 year mechanism',
-        '5 year frame', 
-        'Grab yours now: LIMITED STOCK!!', 
-        'As these are fast sellers and we sell these through other trading platforms, we do run out at times and there is a wait before our next shipment arrives. We will do our best to let you know whenever this is the case. At the time of listing this we have stock available.',
-        'Viewings available at multiple locations around Auckland and Hamilton all 7 days. Pick ups can be arranged but only by Prior arrangement.',
-        'DELIVERY:', 
-        'We deliver anywhere in AUCKLAND. We can also arrange very reasonable freight to most areas in the North & South Island. Please contact us for pricing.',
-        'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
-        'Payment option:', 
-        'Opening Hours:',
-        'Mon - Fri: 9am to 5:30pm', 
-        'Sat - Sun: 10am to 4pm', 
-    ],
-    shippingPrice: [
-        {destination: 'Non-rural - Auckland/Hamilton (free)', price: '$0.00'},
-        {destination: 'Non-rural - Bay of Plenty/Whanganui/Gisborne ', price: '$199.00'},
-        {destination: 'Non-rural - Napier/New Plymouth', price: '$199.00'},
-        {destination: 'Non-rural - Palmerston North/Wellington ', price: '$199.00'},
-        {destination: 'Non-rural - Northland/Waikato', price: '$199.00' },
-        {destination: 'Rural - Ask us for shipping quote', price: '$0.00'},
-        {destination: 'Pick-up available from Manukau, Auckland', price: 'FREE'}
+        condition: 'new',
+        memory: '',
+        hardDriveSize: '',
 
-    ]
- 
+        color: '',
+        cores: '',
+        brand: 'John Young Furniture',
+        fullDescription: [
+            'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
+            'Experience modern luxury with the Currumbin Corner Lounge Suite by John Young Furniture.',
+            'This exquisite 5-seat modular lounge suite is designed to elevate your living space with its sleek and contemporary style. The suite includes 3 scatter cushions, adding a touch of elegance to the overall design.',
+            'The Currumbin Lounge Suite features a unique t-cushion design with vertical stitching, creating a visually appealing look on the suite back, sides, and base. The plush feather and foam seating provides exceptional comfort, allowing you to relax and unwind in style.',
+            'Upholstered in silky velvet fabric, the Currumbin Lounge Suite is available in the sophisticated Shadow color, adding a touch of sophistication to any room. Upgrade your living room with the Currumbin Corner Lounge Suite and indulge in the perfect blend of comfort and style.',
+            'Dimensions (mm): </br> 2.5/S LHF - 1900 x 1010 x 900</br>CNR/W - 1030 x 1030 x 900</br>2.5/S RHF - 1900 x 1010 x 900',
+            'Warranty:',
+            '1 year fabric',
+            '3 year mechanism',
+            '5 year frame',
+            'Grab yours now: LIMITED STOCK!!',
+            'As these are fast sellers and we sell these through other trading platforms, we do run out at times and there is a wait before our next shipment arrives. We will do our best to let you know whenever this is the case. At the time of listing this we have stock available.',
+            'Viewings available at multiple locations around Auckland and Hamilton all 7 days. Pick ups can be arranged but only by Prior arrangement.',
+            'DELIVERY:',
+            'We deliver anywhere in AUCKLAND. We can also arrange very reasonable freight to most areas in the North & South Island. Please contact us for pricing.',
+            'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
+            'Payment option:',
+            'Opening Hours:',
+            'Mon - Fri: 9am to 5:30pm',
+            'Sat - Sun: 10am to 4pm',
+        ],
+        shippingPrice: [
+            { destination: 'Non-rural - Auckland/Hamilton (free)', price: '$0.00' },
+            { destination: 'Non-rural - Bay of Plenty/Whanganui/Gisborne ', price: '$199.00' },
+            { destination: 'Non-rural - Napier/New Plymouth', price: '$199.00' },
+            { destination: 'Non-rural - Palmerston North/Wellington ', price: '$199.00' },
+            { destination: 'Non-rural - Northland/Waikato', price: '$199.00' },
+            { destination: 'Rural - Ask us for shipping quote', price: '$0.00' },
+            { destination: 'Pick-up available from Manukau, Auckland', price: 'FREE' }
+
+        ]
+
 
     },
     {
@@ -90,8 +92,8 @@ const cardData: cardData[] = [
         productName: 'Brand New Rex Corner Lounge Suite with Ottoman',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2074338951.jpg', 'https://trademe.tmcdn.co.nz/photoserver/plus/2066547237.jpg'],
         description: 'Free Shipping to Auckland & Hamilton (Non Rural)',
-        city:'Auckland',
-        closeDate:'Thu, 9 Nov',
+        city: 'Auckland',
+        closeDate: 'Thu, 9 Nov',
         shippingInfo: 'Free shipping',
         proStatus: 'Buy Now',
         oldPrice: '$2,990',
@@ -99,7 +101,11 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'new',
-    color:'Charcoal',
+        memory: '',
+        hardDriveSize: '',
+        cores: '',
+        brand: '',
+        color: 'Charcoal',
         fullDescription: [
             'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
             'Handcrafted in New Zealand using excellent quality materials, this Lounge Suite features large seating areas perfect for families who love to entertain or relax together.',
@@ -111,32 +117,32 @@ const cardData: cardData[] = [
             'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
             'Payment option: </br>Qcard/Gem Visa/Eftpos/WINZ Quotes/Finance Now/Zip/Afterpay/Cash/Bank Transfer',
             'Opening Hours:</br>Mon - Fri: 9am to 5:30pm</br>Sat - Sun: 10am to 4pm',
-            ],
+        ],
         shippingPrice: [
-        {destination: 'Auckland 3-5 days, Standard', price: '$0.00'},
-        {destination: 'Hamilton 3-5 days, Standard', price: '$99.00'},
-        {destination: 'Bay of Plenty 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Taranaki 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Hawke\'s Bay 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Gisborne 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Tauranga 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Whanganui 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Waikato 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Northland 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Shipping more than one item', price: 'No extra charge'},
-        {destination: 'Pick-up available from Manukau, Auckland', price: 'FREE'}
+            { destination: 'Auckland 3-5 days, Standard', price: '$0.00' },
+            { destination: 'Hamilton 3-5 days, Standard', price: '$99.00' },
+            { destination: 'Bay of Plenty 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Taranaki 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Hawke\'s Bay 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Gisborne 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Tauranga 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Whanganui 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Waikato 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Northland 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Shipping more than one item', price: 'No extra charge' },
+            { destination: 'Pick-up available from Manukau, Auckland', price: 'FREE' }
 
-    ]
-        
+        ]
+
 
     },
     {
-        id:'3',
+        id: '3',
         productName: 'Brand New Dublin Manual Recliner Corner Lounge Suite',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2066302782.jpg'],
         description: 'Free Shipping to Auckland and Hamilton (Non-Rural)',
-        city:'Auckland',
-        closeDate:'Wed, 8 Nov',
+        city: 'Auckland',
+        closeDate: 'Wed, 8 Nov',
         shippingInfo: '',
         proStatus: 'Buy Now',
         oldPrice: '$3,990',
@@ -144,24 +150,27 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'new',
-    color:'Grey',
-    brand: 'Berkley Furniture',
-         
-    fullDescription: [
-        'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
-        'Share this luxurious Dublin Corner Sofa Manual Recliner Lounge Suite with your friends, family and guests. Its quality and durability will guarantee your enjoyment perfectly.',
-        'The sofa features oversized cozy seating made of Rhino fabric that is perfect for curling up with a good book or watching a movie. The console features a storage compartment and cup holders, so you can keep your drinks and belongings close at hand.',
-        'The Dublin Corner Recliner Lounge Suite is sure to complement any décor. So why not treat yourself to a little bit of luxury today?',
-        'Measurements (cm):</br>W: 270, 320 D85 H48(Seat)/100(Back)',
-        'Warranty:</br>Standard 12 months RTB Warranty',
-        'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
-        'Payment option: </br>Qcard/Gem Visa/Eftpos/WINZ Quotes/Finance Now/Zip/Afterpay/Cash/Bank Transfer',
-        'Opening Hours:</br>Mon - Fri: 9am to 5:30pm</br>Sat - Sun: 10am to 4pm'
-    ],
-    shippingPrice: [
-         {destination: 'To be arranged', price: 'N/A'},
-        {destination: 'Pick-up available from Manukau, Auckland', price: 'FREE'}
-    ]
+        memory: '',
+        hardDriveSize: '',
+        cores: '',
+        color: 'Grey',
+        brand: 'Berkley Furniture',
+
+        fullDescription: [
+            'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
+            'Share this luxurious Dublin Corner Sofa Manual Recliner Lounge Suite with your friends, family and guests. Its quality and durability will guarantee your enjoyment perfectly.',
+            'The sofa features oversized cozy seating made of Rhino fabric that is perfect for curling up with a good book or watching a movie. The console features a storage compartment and cup holders, so you can keep your drinks and belongings close at hand.',
+            'The Dublin Corner Recliner Lounge Suite is sure to complement any décor. So why not treat yourself to a little bit of luxury today?',
+            'Measurements (cm):</br>W: 270, 320 D85 H48(Seat)/100(Back)',
+            'Warranty:</br>Standard 12 months RTB Warranty',
+            'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
+            'Payment option: </br>Qcard/Gem Visa/Eftpos/WINZ Quotes/Finance Now/Zip/Afterpay/Cash/Bank Transfer',
+            'Opening Hours:</br>Mon - Fri: 9am to 5:30pm</br>Sat - Sun: 10am to 4pm'
+        ],
+        shippingPrice: [
+            { destination: 'To be arranged', price: 'N/A' },
+            { destination: 'Pick-up available from Manukau, Auckland', price: 'FREE' }
+        ]
 
     },
     {
@@ -169,8 +178,8 @@ const cardData: cardData[] = [
         productName: 'Brand New Webber 3+2 Seater Lounge Suite',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2066934770.jpg'],
         description: '3 seater and 2 seater fabric lounge suite',
-        city:'Auckland',
-        closeDate:'Fri, 10 Nov',
+        city: 'Auckland',
+        closeDate: 'Fri, 10 Nov',
         shippingInfo: '',
         proStatus: 'Buy Now',
         oldPrice: '',
@@ -178,37 +187,41 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'new',
-    color:'Grey',
-    fullDescription:[
-        'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
-        'Bring simplicity and style into your Living Area with this sleek and modern Webber 3+2 seater Lounge Suite. This masterpiece design makes it perfect for modern family homes.',
-        'This lounge suite is wonderfully textured lounge suite chesterfield design that aims to bring out the flair to your home space.',
-        'Single seater is also available, please ask us if needed!',
-        'Dimension (mm):</br>3 Seater: W2490-D965-H890</br>2 Seater: W1800-D965-H890</br>1 Seater:  W1168-D965-H890',
-        'Warranty:</br>Standard 12 month\'s manufacturers warranty.',
-        'Grab yours now: LIMITED STOCK!!',
-        'As these are fast sellers and we sell these through other trading platforms, we do run out at times and there is a wait before our next shipment arrives. We will do our best to let you know whenever this is the case. At the time of listing this we have stock available.',
-        'Viewings available at multiple locations around Auckland and Hamilton all 7 days. Let us know your location and we will guide to the nearest store for viewing.',
-        'Pick ups can be arranged but only by Prior arrangement. Please feel free to browse through our other listings.',
-        'DELIVERY:</br>We deliver anywhere in AUCKLAND. We can also arrange very reasonable freight to most areas in the North & South Island. Please contact us for pricing.',
-        'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
-        'Payment option: </br>Qcard/Gem Visa/Eftpos/WINZ Quotes/Finance Now/Zip/Afterpay/Cash/Bank Transfer',
-        'Contact 027 418 0505 for more details now!'
-    ],
-    shippingPrice:[
-        {destination:'Auckland 3-5 days, Standard', price: '$0.00'},
-        {destination:'Hamilton 3-5 days, Standard', price: '$99.00'},
-        {destination:'Bay of Plenty 3-5 days, Standard', price: '$199.00'},
-        {destination:'Taranaki 3-5 days, Standard', price: '$199.00'},
-        {destination:'Hawke\'s Bay 3-5 days, Standard', price: '$199.00'},
-        {destination:'Gisborne 3-5 days, Standard', price: '$199.00'},
-        {destination:'Tauranga 3-5 days, Standard', price: '$199.00'},
-        {destination:'Whanganui 3-5 days, Standard', price: '$199.00'},
-        {destination:'Waikato 3-5 days, Standard', price: '$199.00'},
-        {destination:'Northland 3-5 days, Standard', price: '$199.00'},
-        {destination: 'Pick-up available from Manukau, Auckland', price: 'FREE'}
+        memory: '',
+        hardDriveSize: '',
+        cores: '',
+        brand: '',
+        color: 'Grey',
+        fullDescription: [
+            'At Furniture Clearance Outlet, you will get BRAND NEW products at prices that don\'t break the bank.',
+            'Bring simplicity and style into your Living Area with this sleek and modern Webber 3+2 seater Lounge Suite. This masterpiece design makes it perfect for modern family homes.',
+            'This lounge suite is wonderfully textured lounge suite chesterfield design that aims to bring out the flair to your home space.',
+            'Single seater is also available, please ask us if needed!',
+            'Dimension (mm):</br>3 Seater: W2490-D965-H890</br>2 Seater: W1800-D965-H890</br>1 Seater:  W1168-D965-H890',
+            'Warranty:</br>Standard 12 month\'s manufacturers warranty.',
+            'Grab yours now: LIMITED STOCK!!',
+            'As these are fast sellers and we sell these through other trading platforms, we do run out at times and there is a wait before our next shipment arrives. We will do our best to let you know whenever this is the case. At the time of listing this we have stock available.',
+            'Viewings available at multiple locations around Auckland and Hamilton all 7 days. Let us know your location and we will guide to the nearest store for viewing.',
+            'Pick ups can be arranged but only by Prior arrangement. Please feel free to browse through our other listings.',
+            'DELIVERY:</br>We deliver anywhere in AUCKLAND. We can also arrange very reasonable freight to most areas in the North & South Island. Please contact us for pricing.',
+            'We are a Trade Me Store and New Zealand Registered Company. Please Google: Furniture Clearance Outlet Manurewa.',
+            'Payment option: </br>Qcard/Gem Visa/Eftpos/WINZ Quotes/Finance Now/Zip/Afterpay/Cash/Bank Transfer',
+            'Contact 027 418 0505 for more details now!'
+        ],
+        shippingPrice: [
+            { destination: 'Auckland 3-5 days, Standard', price: '$0.00' },
+            { destination: 'Hamilton 3-5 days, Standard', price: '$99.00' },
+            { destination: 'Bay of Plenty 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Taranaki 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Hawke\'s Bay 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Gisborne 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Tauranga 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Whanganui 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Waikato 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Northland 3-5 days, Standard', price: '$199.00' },
+            { destination: 'Pick-up available from Manukau, Auckland', price: 'FREE' }
 
-    ]
+        ]
 
     },
     {
@@ -216,8 +229,8 @@ const cardData: cardData[] = [
         productName: 'GROHE SENSIA ARENA WALL MOUNTED BIDET TOILET',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/2082294661.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294664.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294667.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294676.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294681.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294684.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294691.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294692.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294695.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294699.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294703.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294704.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294706.jpg'],
         description: '',
-        city:'Auckland',
-        closeDate:'Mon, 4 Nov',
+        city: 'Auckland',
+        closeDate: 'Mon, 4 Nov',
         shippingInfo: 'Shipping from $60.00',
         proStatus: 'Buy Now',
         oldPrice: '$10,824',
@@ -225,6 +238,11 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'New',
+        memory: '',
+        hardDriveSize: '',
+        cores: '',
+
+        color: 'Charcoal',
         brand: 'GROHE',
         fullDescription: [
             'GROHE SENSIA ARENA WALL MOUNTED SHOWER TOILET',
@@ -254,14 +272,14 @@ const cardData: cardData[] = [
             '- To view our outlet store please contact Robertson Bathware to make an appointment.',
             '- Selected items are available to view in the outlet store',
             'Thank you for viewing our page, please make sure to check out our other listings.</br>Robertson Bathware Team'
-            ],
-        shippingPrice:[
-        {destination: 'Auckland 7-10 days, Economy', price: '$60.00'},
-        {destination: 'North Island 10-17 days, Economy', price: '$100.00'},
-        {destination: 'South Island 10-17 days, Economy', price: '$150.00'},
-        {destination: 'Otago 10-17 days, Economy', price: '$200.00'},
-        {destination: 'Southland 10-17 days, Economy', price: '$200.00'},
-        {destination: 'Pick-up available from Auckland City, Auckland', price: 'FREE'}
+        ],
+        shippingPrice: [
+            { destination: 'Auckland 7-10 days, Economy', price: '$60.00' },
+            { destination: 'North Island 10-17 days, Economy', price: '$100.00' },
+            { destination: 'South Island 10-17 days, Economy', price: '$150.00' },
+            { destination: 'Otago 10-17 days, Economy', price: '$200.00' },
+            { destination: 'Southland 10-17 days, Economy', price: '$200.00' },
+            { destination: 'Pick-up available from Auckland City, Auckland', price: 'FREE' }
         ]
     },
     {
@@ -269,19 +287,20 @@ const cardData: cardData[] = [
         productName: 'HP Z2 Mini G4 Workstation | i7-9700 Processor, 16GB RAM, 512GB NVMe SSD, Wi-Fi',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/2082835996.jpg'],
         description: '90 Day Warranty',
-        city:'Auckland',
-        closeDate:'Wed, 29 Nov',
+        city: 'Auckland',
+        closeDate: 'Wed, 29 Nov',
         shippingInfo: 'Free shipping nationwide',
         proStatus: 'Buy Now',
         oldPrice: '$1,200',
         currentPrice: '$1,500',
         link: '/info',
         shopName: 'string',
-        Condition:'New',
-        Memory:'16 to 31 GB',
-        hardDriveSize:'500 to 999 GB',
-        Cores:'8',
-        Brand:'HP',
+        condition: 'New',
+        memory: '16 to 31 GB',
+        hardDriveSize: '500 to 999 GB',
+        cores: '8',
+        color: 'Charcoal',
+        brand: 'HP',
         fullDescription: [
             'HP Z2 Mini G4 Workstation</br>Intel Core i7-9700 Processor (8 core - 4.7Ghz)</br>16GB Memory (upgradable to 64GB)</br>NVIDIA® Quadro® P1000 (4 GB GDDR5 dedicated)</br>512GB NVMe Turbo Drive (Up to 5x faster than SATA SSD)</br>Intel Gigabit LAN</br>Windows 10 Professional</br>Logitech Z150 Stereo Speakers (integrated sound is scratchy so we are supplying brand new external speakers)',
             'Triple Monitor (Screen) Support with 3 x DisplayPort\'s</br>You can purchase DisplayPort to HDMI, DVI or VGA adapters from any retail computer store for as low as $10ea',
@@ -291,19 +310,19 @@ const cardData: cardData[] = [
 
         ],
         shippingPrice: [
-            {destination: 'Free shipping within New Zealand', price: 'Free'},
-            {destination: 'Shipping more than one item', price: 'No extra charge'}
+            { destination: 'Free shipping within New Zealand', price: 'Free' },
+            { destination: 'Shipping more than one item', price: 'No extra charge' }
         ]
-        
+
 
     },
     {
-        id:'7',
+        id: '7',
         productName: 'Sliding Door with Display Surface Bookshelf-120*120CM Grey',
         productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/2069472159.jpg', 'https://trademe.tmcdn.co.nz/photoserver/full/2069479022.jpg', 'https://trademe.tmcdn.co.nz/photoserver/full/2069479035.jpg', 'https://trademe.tmcdn.co.nz/photoserver/full/2069479074.jpg'],
         description: '',
-        city:'Auckland',
-        closeDate:'Wed, 29 Nov',
+        city: 'Auckland',
+        closeDate: 'Wed, 29 Nov',
         shippingInfo: 'Shipping from $80.00',
         proStatus: 'Buy Now',
         oldPrice: '$590.99',
@@ -311,6 +330,11 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'new',
+        memory: '',
+        hardDriveSize: '',
+        cores: '',
+        brand: '',
+        color: '',
         fullDescription: [
             'Design: Combine storage cabinet and book display rack together, the sliding door can easily slide from left to the right, or right to the left or in the middle. 3 tier front-facing presentation spaces for books and magazines display. Behind the sliding door bookshelf is 6 storage cabinet, which can store books, toys, art collections, decorations and storage boxes.',
             'Material: Made of high quality EO grade solid wood ecological board, environmentally friendly, tasteless, ready to use, strong and wear-resistant, and stainless steel round rod for magazine and book holders. This cabinet is sturdy, smart and durable.',
@@ -322,25 +346,25 @@ const cardData: cardData[] = [
             'Note: Due to the different monitor and light effects, the actual colour of the item might be slightly different from the colour shown in the picture. Kindly allow 1-2cm measuring deviation due to manual measurement.',
             'We are GST registered and are able to provide a GST invoice upon request.'
         ],
-        shippingPrice:[
-            {destination: 'Auckland 3-4 days, Economy', price: '$80.00'},
-            {destination: 'Auckland 4-7 days, Rural Economy', price: '$150.00'},
-            {destination: 'North Island 3-4 days, Economy', price: '$100.00'},
-            {destination: 'North Island 4-7 days, Rural Economy', price: '$120.00'},
-            {destination: 'South Island 3-4 days, Economy', price: '$150.00'},
-            {destination: 'South Island 4-7 days, Rural Economy', price: '$160.00'},
-            {destination: 'Pick-up available from Henderson, Auckland', price: 'Free'}
+        shippingPrice: [
+            { destination: 'Auckland 3-4 days, Economy', price: '$80.00' },
+            { destination: 'Auckland 4-7 days, Rural Economy', price: '$150.00' },
+            { destination: 'North Island 3-4 days, Economy', price: '$100.00' },
+            { destination: 'North Island 4-7 days, Rural Economy', price: '$120.00' },
+            { destination: 'South Island 3-4 days, Economy', price: '$150.00' },
+            { destination: 'South Island 4-7 days, Rural Economy', price: '$160.00' },
+            { destination: 'Pick-up available from Henderson, Auckland', price: 'Free' }
 
         ]
 
     },
     {
-        id:'8',
+        id: '8',
         productName: 'MOON MODULAR SOFA | LOCAL NZ MADE LOUNGE SUITE | $4999',
-        productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/1977544065.jpg','https://trademe.tmcdn.co.nz/photoserver/plus/1977544080.jpg', 'https://trademe.tmcdn.co.nz/photoserver/plus/1977544100.jpg'],
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/1977544065.jpg', 'https://trademe.tmcdn.co.nz/photoserver/plus/1977544080.jpg', 'https://trademe.tmcdn.co.nz/photoserver/plus/1977544100.jpg'],
         description: '',
-        city:'Auckland',
-        closeDate:'Sat, 2 Dec',
+        city: 'Auckland',
+        closeDate: 'Sat, 2 Dec',
         shippingInfo: 'Shipping from $115.00',
         proStatus: 'Buy Now',
         oldPrice: '$4,999',
@@ -348,6 +372,11 @@ const cardData: cardData[] = [
         link: '/info',
         shopName: 'string',
         condition: 'new',
+        memory: '',
+        hardDriveSize: '',
+        cores: '',
+
+        color: '',
         brand: 'Sofacreations',
         fullDescription: [
             'The beautiful Moon Sofa by Sofacreations. This stylish, Organic in shape and sculptural sofa is exquisitely upholstered in a gorgeous, Ovis Ivory fabric from Warwick, a sublime seating arrangement that will redefine both modern and traditional interiors. It can smartly divide large, open-plan living areas.',
@@ -364,11 +393,11 @@ const cardData: cardData[] = [
             'Contact us: To get the quote visit our Auckland or Wellington Showroom',
             'NZ MADE SOFAS DIRECT TO YOU at factory prices'
         ],
-        shippingPrice:[
-            {destination: 'North Island 11-18 days, Economy', price: '$350.00'},
-            {destination: 'South Island 19-32 days, Economy', price: '$550.00'},
-            {destination: 'Auckland 11-18 days, Economy', price: '$115.00'},
-            {destination: 'Pick-up available from Auckland City, Auckland', price: 'Free'}
+        shippingPrice: [
+            { destination: 'North Island 11-18 days, Economy', price: '$350.00' },
+            { destination: 'South Island 19-32 days, Economy', price: '$550.00' },
+            { destination: 'Auckland 11-18 days, Economy', price: '$115.00' },
+            { destination: 'Pick-up available from Auckland City, Auckland', price: 'Free' }
 
         ]
 
@@ -376,4 +405,4 @@ const cardData: cardData[] = [
 
 
 ];
-export default cardData;
+export default CardData;
