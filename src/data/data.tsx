@@ -3,7 +3,7 @@
 export interface CardData {
     id: string;
     productName: string;
-    productImg: string;
+    productImg: string[];
     description: string;
     city: string;
     closeDate: string;
@@ -35,7 +35,7 @@ const cardData: cardData[] = [
     {
         id: '1',
         productName: 'Brand New Currumbin Velvet Fabric Corner Lounge Suite',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/plus/2066301121.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2066301121.jpg'],
         description: 'Viewing across locations - Auckland & Hamilton',
         city:'Canterbury',
         closeDate:'Sat, 16 Sep',
@@ -88,7 +88,7 @@ const cardData: cardData[] = [
     {
         id: '2',
         productName: 'Brand New Rex Corner Lounge Suite with Ottoman',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/plus/2074338951.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2074338951.jpg', 'https://trademe.tmcdn.co.nz/photoserver/plus/2066547237.jpg'],
         description: 'Free Shipping to Auckland & Hamilton (Non Rural)',
         city:'Auckland',
         closeDate:'Thu, 9 Nov',
@@ -133,7 +133,7 @@ const cardData: cardData[] = [
     {
         id:'3',
         productName: 'Brand New Dublin Manual Recliner Corner Lounge Suite',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/plus/2066302782.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2066302782.jpg'],
         description: 'Free Shipping to Auckland and Hamilton (Non-Rural)',
         city:'Auckland',
         closeDate:'Wed, 8 Nov',
@@ -167,7 +167,7 @@ const cardData: cardData[] = [
     {
         id: '4',
         productName: 'Brand New Webber 3+2 Seater Lounge Suite',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/plus/2066934770.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/plus/2066934770.jpg'],
         description: '3 seater and 2 seater fabric lounge suite',
         city:'Auckland',
         closeDate:'Fri, 10 Nov',
@@ -214,7 +214,7 @@ const cardData: cardData[] = [
     {
         id: '5',
         productName: 'GROHE SENSIA ARENA WALL MOUNTED BIDET TOILET',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/full/2082294661.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/2082294661.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294664.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294667.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294676.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294681.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294684.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294691.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294692.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294695.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294699.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294703.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294704.jpg', 'https://trademe.tmcdn.co.nz/photoserver/1024sq/2082294706.jpg'],
         description: '',
         city:'Auckland',
         closeDate:'Mon, 4 Nov',
@@ -267,7 +267,7 @@ const cardData: cardData[] = [
     {
         id: '6',
         productName: 'HP Z2 Mini G4 Workstation | i7-9700 Processor, 16GB RAM, 512GB NVMe SSD, Wi-Fi',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/full/2082835996.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/2082835996.jpg'],
         description: '90 Day Warranty',
         city:'Auckland',
         closeDate:'Wed, 29 Nov',
@@ -300,7 +300,7 @@ const cardData: cardData[] = [
     {
         id:'7',
         productName: 'Sliding Door with Display Surface Bookshelf-120*120CM Grey',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/full/2069472159.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/2069472159.jpg', 'https://trademe.tmcdn.co.nz/photoserver/full/2069479022.jpg', 'https://trademe.tmcdn.co.nz/photoserver/full/2069479035.jpg', 'https://trademe.tmcdn.co.nz/photoserver/full/2069479074.jpg'],
         description: '',
         city:'Auckland',
         closeDate:'Wed, 29 Nov',
@@ -337,7 +337,7 @@ const cardData: cardData[] = [
     {
         id:'8',
         productName: 'MOON MODULAR SOFA | LOCAL NZ MADE LOUNGE SUITE | $4999',
-        productImg: 'https://trademe.tmcdn.co.nz/photoserver/full/1977544065.jpg',
+        productImg: ['https://trademe.tmcdn.co.nz/photoserver/full/1977544065.jpg','https://trademe.tmcdn.co.nz/photoserver/plus/1977544080.jpg', 'https://trademe.tmcdn.co.nz/photoserver/plus/1977544100.jpg'],
         description: '',
         city:'Auckland',
         closeDate:'Sat, 2 Dec',

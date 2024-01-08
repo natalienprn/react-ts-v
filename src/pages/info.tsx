@@ -12,6 +12,7 @@ import ShippingIcon from '/icon/shipping-icon.png';
 import GpsIcon from '/icon/gps-icon.png';
 import ShieldIcon from '/icon/shield-icon.png';
 import StarsIcon from '/icon/five-stars-icon.png';
+import SlideShow from '../component/SlideShow';
 
 
 interface ProductInfo{
@@ -44,14 +45,15 @@ const Info: React.FC<ProductInfo> = ({cardData}) => {
         </div>
         <div className='main-content'>
           <div className='product-info'>
-            <div className='photo-screen'>
+            {/* <div className='photo-screen'>
               <img src={selectedCard.productImg}/>
             </div>
             <div className='photo-list'>
               <div className='photo-single'>
                 <img src={selectedCard.productImg}/>
               </div> 
-            </div>
+            </div> */}
+            <SlideShow images={selectedCard.productImg} />
             <div className='info-body'>
               <table>
               <tbody>
