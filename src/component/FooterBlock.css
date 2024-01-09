@@ -99,6 +99,11 @@
     width: 24px;
     height: 24px;
   }
+  @media only screen and (max-width: 480px){
+    .footer-above{
+      overflow: hidden;
+    }
+  }
   @media only screen and (min-width: 768px){
     .footer-content-top ul{
       display: flex;

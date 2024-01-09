@@ -254,7 +254,7 @@ const Info: React.FC<ProductInfo> = ({cardData}) => {
               <div className='buy-section'>
                 <p>Buy Now</p>
                 <div className='product-price'>
-                  <span className='price'>
+                  <span className='current-price'>
                     {selectedCard.currentPrice}
                   </span>
                   each

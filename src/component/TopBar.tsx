@@ -150,9 +150,18 @@ const TopBar:React.FC = ()=>{
               </div>
               
               <li>
-                <img src={IconSearchNav} className='icon-navbar'/>
-                <input className='input' type='text' 
-                placeholder='Search all of TradeMe'></input></li>
+                <div className='searchbar-hidden'>
+                  <img src={IconSearchNav} className='icon-navbar '/>
+                  <input className='input' type='text' 
+                  placeholder='Search all of TradeMe'></input>
+                </div>
+                <div className='searchicon-smallscreen'>
+                  <img src={IconSearchNav} className='icon-navbar '/>
+                  
+                  <div>Search</div>
+                
+                </div>
+              </li>
             </ul>
           </div>
           <div className='navbar-right'>
@@ -169,9 +178,12 @@ const TopBar:React.FC = ()=>{
                 <div>Favourites</div>
                 </div>
               </li>
-              <li className='navbar-hidden navbar-iconlist'>
-                <img src={IconPen} className='icon-navbar'/>
+              <li className='navbar-hidden'>
+                <div className=' navbar-iconlist'>
+                  <img src={IconPen} className='icon-navbar'/>
                 <div>Start a listing</div>
+                </div>
+                
                 </li>
               <li className='navbar-iconlist navbar-iconlist-profile-lg'>
                 <div>My Trade Me</div>
