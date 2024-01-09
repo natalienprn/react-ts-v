@@ -70,10 +70,11 @@
   }
   .footer-above ul{
     justify-content: left;
+    
   }
   .footer-above li{
     margin-right:  16px ;
-
+overflow: hidden;
   }
   .footer-under{
     margin: 5px;

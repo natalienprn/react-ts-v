@@ -354,7 +354,8 @@ button {
   color: #44413D;
   font-weight: bolder;
   font-size: 31px;
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
   line-height: 40px;
   margin-top: 8px;
   margin-bottom: 16px;
@@ -536,6 +537,9 @@ button {
   .product-info,
   .product-buyer-option {
     display: contents;
+  }
+  .product-info{
+    margin-right: 24px;
   }
 
   /* .photo-screen {
