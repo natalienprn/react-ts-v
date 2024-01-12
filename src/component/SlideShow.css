@@ -29,8 +29,10 @@
 
   
   .photo-list {
-    width: 785px;
+    /* width: 785px; */
+    width: 100%;
     height: 66px;
+    overflow: hidden;
     /* display: inline; */
     padding: 24px;
 /* 

@@ -1,7 +1,6 @@
 .carousel-wrapper {
     position: relative;
-    width: 100%;
-
+    width: 95%;
 }
 
 .carousel {
@@ -9,6 +8,8 @@
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
     position: relative;
+    z-index: 2;
+    max-width: 1200px;
 }
 
 .arrow-left,
@@ -42,14 +43,60 @@ button {
 
 @media only screen and (max-width: 1280px) {
 
+    .carousel-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        position: absolute;
+    }
+    .arrow-left {
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    .arrow-right {
+        right: 0;
+        transform: translateX(50%);
+    }
+
     .arrow-left img,
     .arrow-right img {
 
         background-color: rgba(169, 169, 169, 0.5);
         width: 50px;
         height: 50px;
-        z-index: 9999;
+        
         top: calc(50% - 25px);
+        position: absolute;
+    }
+
+
+    /* .arrows{
+
+        position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 6;
+    left: 0;
+    }
+
+    .arrow-left img,
+    .arrow-right img {
+
+        background-color: rgba(169, 169, 169, 0.5);
+        width: 50px;
+        height: 50px;
+        
+        top: calc(50% - 25px);
+        position: absolute;
     }
 
     .arrow-left,
@@ -59,7 +106,9 @@ button {
 
     .arrow-right,
     .arrow-right img {
-        left: auto;
-    }
+        
+        right: 0px;
+       
+    } */
 
 }

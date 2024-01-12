@@ -228,6 +228,7 @@
 }
 .deals-list{
     display: inline-flex;
+    width: 100%;
 }
 .popular-search{
     display: block;

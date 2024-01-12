@@ -19,19 +19,47 @@ const Carousel: React.FC<CarouselProps> = ({ cardData }) => {
 
     // const TotalCard = cardData.length;
     // const TotalDecks = Math.ceil(TotalCard / CardPerDeck);
-    const calCardWidth = () => {
+    // const calCardWidth = () => {
+    //     const screenWidth = window.innerWidth;
+    //     if (screenWidth > 1280) {
+    //         return 289.6;
+    //     } else if (screenWidth > 768) {
+    //         return 256;
+    //     } else {
+    //         return 264;
+    //     }
+    // };
+
+
+    const calCardPerDeck = () => {
         const screenWidth = window.innerWidth;
-        if (screenWidth > 1280) {
-            return 289.6;
-        } else if (screenWidth > 768) {
-            return 256;
+      
+        if (screenWidth >= 980) {
+          return 4;
+        } else if (screenWidth >= 700 && screenWidth < 980) {
+          return 3;
+        } else if (screenWidth > 445 && screenWidth < 700) {
+          return 2;
         } else {
-            return 264;
+          return 1;
         }
-    };
-    const [cardWidth, setCardWidth] = useState(calCardWidth);
-    const [cardsPerDeck, setCardsPerDeck] = useState(Math.floor(window.innerWidth / cardWidth));
+      };
+      
+    //   const calCardToShow = () => {
+    //     const screenWidth = window.innerWidth;
+      
+    //     if (screenWidth > 1280) {
+    //       return 4;
+    //     } else {
+    //       return 5;
+    //     }
+    //   };
+
+    // const [cardWidth, setCardWidth] = useState(calCardWidth);
+    const [cardsPerDeck, setCardsPerDeck] = useState(calCardPerDeck());
+    // const [cardsToShow, setCardsToShow] = useState(calCardToShow())
     const [currentDeck, setCurrentDeck] = useState(0);
+    const cardsToShow = 4;
 
     const TotalCard = cardData.length;
     const TotalDecks = Math.ceil(TotalCard / cardsPerDeck);
@@ -46,24 +74,38 @@ const Carousel: React.FC<CarouselProps> = ({ cardData }) => {
     };
 
     const StartCardIndex = currentDeck * cardsPerDeck;
-    const ShowingCards = cardData.slice(StartCardIndex, StartCardIndex + cardsPerDeck);
+    const EndCardIndex = StartCardIndex + cardsToShow;
+    const ShowingCards = cardData.slice(StartCardIndex, EndCardIndex);
+
+    // const updateCardsPerDeck = () => {
+    //     const newCardWidth = calCardWidth();
+    //     setCardWidth(newCardWidth);
+
+    //     const newCardsPerDeck = Math.floor(window.innerWidth / newCardWidth);
+    //     setCardsPerDeck(newCardsPerDeck);
+    // };
+
+    // useEffect(() => {
+    //     window.addEventListener('resize', updateCardsPerDeck);
+    //     return () => {
+    //         window.removeEventListener('resize', updateCardsPerDeck);
+    //     };
+    // }, [cardsPerDeck, cardWidth]);
 
     const updateCardsPerDeck = () => {
-        const newCardWidth = calCardWidth();
-        setCardWidth(newCardWidth);
-
-        const newCardsPerDeck = Math.floor(window.innerWidth / newCardWidth);
+        const newCardsPerDeck = calCardPerDeck();
         setCardsPerDeck(newCardsPerDeck);
-    };
-
-    useEffect(() => {
+      };
+    
+      useEffect(() => {
         window.addEventListener('resize', updateCardsPerDeck);
         return () => {
-            window.removeEventListener('resize', updateCardsPerDeck);
+          window.removeEventListener('resize', updateCardsPerDeck);
         };
-    }, [cardsPerDeck, cardWidth]);
+      }, []);
 
     return (
+        
         <div className="carousel-wrapper">
             <div className="carousel">
 
@@ -74,12 +116,15 @@ const Carousel: React.FC<CarouselProps> = ({ cardData }) => {
                     </Link>
                 ))}
             </div>
-            <button className="arrow-left" onClick={handlePrevDeck}>
-                <img src={ArrowLeft} />
-            </button>
-            <button className="arrow-right" onClick={handleNextDeck}>
-                <img src={ArrowRight} />
-            </button>
+            <div className="arrows-inside">
+                <button className="arrow-left" onClick={handlePrevDeck}>
+                    <img src={ArrowLeft} />
+                </button>
+                <button className="arrow-right" onClick={handleNextDeck}>
+                    <img src={ArrowRight} />
+                </button>
+            </div>
+            
         </div>
     );
 };
