@@ -8,6 +8,8 @@ import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
 import CateItem from '../data/catelist'
 import Carousel from '../component/Carousel'
+import SearchPage from './searchpage'
+import { Link } from 'react-router-dom'
 
 
 
@@ -18,6 +20,10 @@ function Home() {
   function handleSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     console.log(`Searching for: ${keyword}`);
+  }
+  const handleCateSearch=()=> {
+    console.log('Button clicked!');
+    return <SearchPage/>
   }
 
 
@@ -65,7 +71,8 @@ function Home() {
 
               </div>
               <button className='search-mp'>
-                Search Marketplace
+              <Link to={`/result`}>Search Marketplace</Link>
+                
               </button>
             </form>
           </div>
