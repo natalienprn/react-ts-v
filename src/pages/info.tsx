@@ -45,14 +45,6 @@ const Info: React.FC<ProductInfo> = ({cardData}) => {
         </div>
         <div className='main-content'>
           <div className='product-info'>
-            {/* <div className='photo-screen'>
-              <img src={selectedCard.productImg}/>
-            </div>
-            <div className='photo-list'>
-              <div className='photo-single'>
-                <img src={selectedCard.productImg}/>
-              </div> 
-            </div> */}
             <SlideShow images={selectedCard.productImg} />
             <div className='info-body'>
               <table>

@@ -494,8 +494,8 @@
     .banner-top, .search-section, .categories, .popular-search, .deals-section{
         /* padding-left: 16%;
         padding-right: 16%; */
-        padding-right: calc(140px + 5%);
-        padding-left: calc(140px + 5%);
+        /* padding-right: calc(140px + 5%);
+        padding-left: calc(140px + 5%); */
     }
     .search-section{
         width: calc(100% - (280px + 10%));
@@ -508,5 +508,27 @@
         width: 50%;
     }
     
+    .categories,
+    .deals-section-wrapper,
+    /* .search-section, */
+    .popular-search {
+      padding-left: 140px;
+      padding-right: 140px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1300px;
+    }
+    .search-section{
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1300px;
+        
+ 
+    }
+    .banner-top-message{
+        margin-left: auto;
+      margin-right: auto;
+      max-width: 1300px;
+    }
+    
   }
-  

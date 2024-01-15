@@ -153,5 +153,13 @@ overflow: hidden;
 
 
   }
-
+  @media only screen and (min-width: 1280px){
+  .footer-content, .footer-bottom {
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+  }
+}
   
