@@ -1,7 +1,6 @@
 
 import { FormEvent, useState } from 'react'
-import './info.css'
-import './home.css'
+import './searchpage.css'
 
 import cardData from '../data/data'
 import TopBar from '../component/TopBar'
@@ -10,6 +9,7 @@ import CateItem from '../data/catelist'
 import Carousel from '../component/Carousel'
 import DealCard from '../component/DealCard'
 import { Link } from 'react-router-dom'
+import ProductCard from '../component/ProductCard'
 
 
 
@@ -44,7 +44,17 @@ function SearchPage() {
         </div>
         <div className='result-wrapper'>
             <div className='result-section'>
+                Showing results
+                <div className='result-display'>
+                    {ShowingCards.map((card, index) => (
+                    // <DealCard key={index} data={card}/>
+                    <Link to={`/product/${card.id}`} key={index}>
+                        <ProductCard data={card} />
+                    </Link>
+                ))}
 
+                </div>
+                
             </div>
 
         </div>        
