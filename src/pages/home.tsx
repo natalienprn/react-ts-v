@@ -8,23 +8,40 @@ import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
 import CateItem from '../data/catelist'
 import Carousel from '../component/Carousel'
-import SearchPage from './searchpage'
+// import SearchPage from './searchpage'
 import { Link } from 'react-router-dom'
+import { createHashHistory } from 'history';
 
 
 
 
 function Home() {
   const [keyword, setKeyword] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const history = createHashHistory();
 
+  // function handleSearch(event: FormEvent<HTMLFormElement>) {
+  //   event.preventDefault();
+  //   console.log(`Searching for: ${keyword}`);
+  //   // history.push(`/result`, { categoryId: selectedCategory });
+  //   history.push(`/result/${selectedCategory}`);
+
+
+  // }
   function handleSearch(event: FormEvent<HTMLFormElement>) {
+    console.log('handleSearch triggered');
     event.preventDefault();
     console.log(`Searching for: ${keyword}`);
+    console.log('Selected Category:', selectedCategory);
+    history.push(`/result/${selectedCategory}`);
   }
-  const handleCateSearch=()=> {
-    console.log('Button clicked!');
-    return <SearchPage/>
-  }
+  
+  
+  // const handleCateSearch=()=> {
+  //   console.log('Button clicked!');
+  //   return <SearchPage/>
+  // }
+
 
 
   return (
@@ -62,7 +79,11 @@ function Home() {
                     (Optional)
                   </span>
                 </label>
-                <select name='category' id='category'>
+                <select name='category' 
+                id='category'
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}>
+                  <option value=''>Select a category</option>
                   {CateItem.map((item) => (
                     <option key={item.id} value={item.id}>{item.item}</option>
                   ))}
@@ -70,8 +91,10 @@ function Home() {
                 </select>
 
               </div>
-              <button className='search-mp'>
-              <Link to={`/result`}>Search Marketplace</Link>
+              <button className='search-mp' type='submit'>
+              
+                  Search Marketplace
+            
                 
               </button>
             </form>

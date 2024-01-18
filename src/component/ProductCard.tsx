@@ -12,11 +12,11 @@ const ProductCard: React.FC<ProductCardProps> = ({data})=>{
     return(
         // <Link to={data.link}>
           <div className='product-card-container'>
-            <div className='deal-card'>
-              <div className='deal-thumbnail'>
+            <div className='product-card'>
+              <div className='product-thumbnail'>
                 <img src={data.productImg[0]}/> 
               </div>
-              <div className='deal-info'>
+              <div className='product-card-info'>
                 <div className='top-info'>
                   <div className='city'>
                     {data.city}

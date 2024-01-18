@@ -115,7 +115,7 @@
 @media only screen and (min-width: 1327px){
   
   .deal-info {
-    height: 173px;
+    height: 180px;
   }
 }
 @media only screen and (min-width: 1600px){
@@ -125,7 +125,7 @@
     height: 437px;
   }
   .deal-info {
-    height: 173px;
+    height: 180px;
   }
   .deal-thumbnail img{
     max-width: 260px;

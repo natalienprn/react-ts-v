@@ -14,7 +14,7 @@
     padding-top: 24px;
     padding-bottom: 0px;
     padding: 24px 24px 0px 24px;
-    display: none;
+    /* display: none; */
     color: #85808C;
   }
   .footer-content-top{
@@ -25,7 +25,7 @@
     justify-content: space-between;
   }
   .footer-content-top ul{
-    display: none;
+    
     flex-direction: row;
     list-style-type: none;
     margin: 0;
@@ -43,7 +43,7 @@
     width: fit-content;
   }
   .footer-main{
-    display: none;
+    /* display: none; */
     font-size: 12px;
     height: auto;
     padding-top: 24px;
@@ -103,6 +103,11 @@ overflow: hidden;
   @media only screen and (max-width: 480px){
     .footer-above{
       overflow: hidden;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .footer-content{
+      display: none;
     }
   }
   @media only screen and (min-width: 768px){
