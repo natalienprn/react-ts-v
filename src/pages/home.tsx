@@ -10,7 +10,8 @@ import CateItem from '../data/catelist'
 import Carousel from '../component/Carousel'
 // import SearchPage from './searchpage'
 import { Link } from 'react-router-dom'
-import { createHashHistory } from 'history';
+// import { createHashHistory } from 'history'
+import { useNavigate, createSearchParams } from 'react-router-dom'
 
 
 
@@ -18,7 +19,8 @@ import { createHashHistory } from 'history';
 function Home() {
   const [keyword, setKeyword] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('');
-  const history = createHashHistory();
+  // const history = createHashHistory();
+  const navigate = useNavigate();
 
   // function handleSearch(event: FormEvent<HTMLFormElement>) {
   //   event.preventDefault();
@@ -33,16 +35,17 @@ function Home() {
     event.preventDefault();
     console.log(`Searching for: ${keyword}`);
     console.log('Selected Category:', selectedCategory);
-    history.push(`/result/${selectedCategory}`);
+    if (selectedCategory){
+      //  history.push(`/result/${selectedCategory}`);
+      navigate({
+        pathname: `/result/${selectedCategory}`,
+        search: createSearchParams({keyword}).toString()
+      });
+      console.log('it is push this id: ', selectedCategory);
+      }
+   
   }
   
-  
-  // const handleCateSearch=()=> {
-  //   console.log('Button clicked!');
-  //   return <SearchPage/>
-  // }
-
-
 
   return (
     <>
@@ -70,7 +73,7 @@ function Home() {
                   value={keyword}
                   onChange={(e) => setKeyword(e.target.value)}
                   placeholder='Search by keyword'></input>
-                {/* <img src={IconSearchBlock} className='search-icon-inside'/> */}
+                
               </div>
               <div className='search-by-cate'>
                 <label className='search-heading'>
@@ -91,11 +94,13 @@ function Home() {
                 </select>
 
               </div>
-              <button className='search-mp' type='submit'>
-              
-                  Search Marketplace
-            
-                
+              <button className='search-mp' type='submit'
+              onClick={() => {
+                // history.push(`/result/${selectedCategory}`);
+                handleSearch
+              }}
+              >
+                  Search Marketplace     
               </button>
             </form>
           </div>
@@ -124,10 +129,7 @@ function Home() {
             </div>
             <div className='deals-list'>
 
-              {/* {cardData.map((item, index)=>(
-              <DealCard key={index} data={item}/>
-            ))}
-             */}
+          
               <Carousel cardData={cardData} />
             </div>
           </div>

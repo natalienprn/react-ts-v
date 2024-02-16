@@ -1,6 +1,6 @@
 // import React from 'react';
 import './TopBar.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { CardData } from '../data/data';
 
 import TrademeLogo from '/trademe-logo.jpg';
@@ -102,9 +102,11 @@ const TopBar:React.FC = ()=>{
             
             <ul>
               <li>
-                <img id='logo-main' src={TrademeLogo}/>
+              <Link to="/">
+                    
+                <img id='logo-main' src={TrademeLogo} />
                 <img id='logo-small' src={TrademeLogoSmall}/>
-              
+              </Link>
               </li>
               <div className='browse-div' ref={DropdownRef}>
                 <li className='browse-list navbar-hidden'  onClick={() => toggleDropdown()}>

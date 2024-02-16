@@ -2,7 +2,8 @@
 import {useState, useEffect} from 'react'
 import './searchpage.css'
 
-import cardData from '../data/data'
+// import cardData from '../data/data'
+import cardData, { CardData } from '../data/data';
 import CateItem from '../data/catelist'
 
 import TopBar from '../component/TopBar'
@@ -10,12 +11,15 @@ import FooterBlock from '../component/FooterBlock'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import ProductCard from '../component/ProductCard'
 
-
+interface SearchPageProps {
+  cardData: CardData[]; // Specify the type for cardData
+}
 
 
 function SearchPage() {
     const { id } = useParams();
     console.log('Category ID from URL:', id);
+    
 //   const [keyword, setKeyword] = useState('');
 
 //   function handleSearch(event: FormEvent<HTMLFormElement>) {
@@ -26,6 +30,7 @@ function SearchPage() {
   const [keyword, setKeyword] = useState('');
   const location = useLocation();
   const categoryId = location.state?.categoryId;
+  // console.log('Received Category ID:', categoryId);
   console.log('Received Category ID:', categoryId);
 
   const [currentCategory, setCurrentCategory] = useState<CateItem | null>(null);
@@ -50,6 +55,7 @@ function SearchPage() {
       </>
     );
   }
+  console.log('category: ', currentCategory.item);
 
 
 

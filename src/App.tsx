@@ -15,10 +15,12 @@ function App() {
 
         <Route path='/' element={<Home />} />
         <Route path="/product/:id" element={<Info cardData={cardData} />} />
-        <Route path="/result/:id" element={<SearchPage />}/>
+        {/* <Route path="/result/:id" element={<SearchPage />}/> */}
+        <Route path="/result/:id" element={<SearchPage />} />
+
       </Routes>
     </>
-  )
+  );
 }
 
 export default App

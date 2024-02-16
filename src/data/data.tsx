@@ -11,10 +11,8 @@ export interface CardData {
     proStatus: string;
     oldPrice: string;
     currentPrice: string;
-    link: string;
-
+    
     shopName: string;
-
     condition: string;
     memory: string;
     hardDriveSize: string;
@@ -43,7 +41,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$4,989',
         currentPrice: '$3,899',
-        link: '/info',
+    
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -98,7 +96,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$2,990',
         currentPrice: '$1,989',
-        link: '/info',
+       
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -147,7 +145,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$3,990',
         currentPrice: '$2,990',
-        link: '/info',
+        
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -184,7 +182,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '',
         currentPrice: '$2,990',
-        link: '/info',
+        
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -235,7 +233,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$10,824',
         currentPrice: '$4,990',
-        link: '/info',
+       
         shopName: 'string',
         condition: 'New',
         memory: '',
@@ -293,7 +291,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$1,200',
         currentPrice: '$1,500',
-        link: '/info',
+        
         shopName: 'string',
         condition: 'New',
         memory: '16 to 31 GB',
@@ -327,7 +325,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$590.99',
         currentPrice: '$323.00',
-        link: '/info',
+        
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -369,7 +367,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$4,999',
         currentPrice: '$3,999',
-        link: '/info',
+        
         shopName: 'string',
         condition: 'new',
         memory: '',
