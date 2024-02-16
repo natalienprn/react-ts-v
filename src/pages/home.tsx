@@ -9,7 +9,7 @@ import FooterBlock from '../component/FooterBlock'
 import CateItem from '../data/catelist'
 import Carousel from '../component/Carousel'
 // import SearchPage from './searchpage'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 // import { createHashHistory } from 'history'
 import { useNavigate, createSearchParams } from 'react-router-dom'
 
