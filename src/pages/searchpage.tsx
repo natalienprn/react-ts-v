@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import './searchpage.css'
 
 // import cardData from '../data/data'
-import cardData, { CardData } from '../data/data';
+import cardData from '../data/data';
 import CateItem from '../data/cateList'
 
 import TopBar from '../component/TopBar'
@@ -11,9 +11,9 @@ import FooterBlock from '../component/FooterBlock'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import ProductCard from '../component/ProductCard'
 
-interface SearchPageProps {
-  cardData: CardData[]; // Specify the type for cardData
-}
+// interface SearchPageProps {
+//   cardData: CardData[]; // Specify the type for cardData
+// }
 
 
 function SearchPage() {
