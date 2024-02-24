@@ -6,13 +6,15 @@ import React from 'react';
 import Shoplogo from '/logo-shop.png';
 import TopBar from '../component/TopBar';
 import FooterBlock from '../component/FooterBlock';
+import SlideShow from '../component/SlideShow';
 import { CardData } from '../data/data';
 import { useParams } from 'react-router-dom';
-import ShippingIcon from '/icon/shipping-icon.png';
-import GpsIcon from '/icon/gps-icon.png';
-import ShieldIcon from '/icon/shield-icon.png';
-import StarsIcon from '/icon/five-stars-icon.png';
-import SlideShow from '../component/SlideShow';
+
+import IconShippingGrey from '/icon/shipping-icon.png';
+import IconLocation from '/icon/gps-icon.png';
+import IconBuyerProtection from '/icon/shield-icon.png';
+import IconStars from '/icon/five-stars-icon.png';
+
 
 
 interface ProductInfo{
@@ -268,15 +270,15 @@ const Info: React.FC<ProductInfo> = ({cardData}) => {
               </div>
               <div className='shipping-deals'>
                 <div className='shipping-deal'> 
-                  <img src={ShippingIcon}/>
+                  <img src={IconShippingGrey}/>
                   Shipping from $115.00</div>
                 <div className='shipping-deal'> 
-                <img src={GpsIcon}/>
+                <img src={IconLocation}/>
                 Pick up available, Auckland City, Auckland</div>
               </div>
             </div>
             <div className='buyer-protection'>
-            <img src={ShieldIcon}/>
+            <img src={IconBuyerProtection}/>
             <span style={{color: '#055E99', fontWeight: 'bold'}}>Buyer Protection </span> 
             covers you up to $2,500 on this item when you pay 
             with Ping or Afterpay if your item doesn't show up 
@@ -292,7 +294,7 @@ const Info: React.FC<ProductInfo> = ({cardData}) => {
                 <img src={Shoplogo}/>
               </div>
               <div className='shop-summary'>
-                <span style={{color:'#007ACD'}}>{selectedCard.shopName} (471 <img src={StarsIcon}/>)</span><br/>
+                <span style={{color:'#007ACD'}}>{selectedCard.shopName} (471 <img src={IconStars}/>)</span><br/>
                 <span style={{fontWeight: 'bold'}}><span style={{fontSize: '18px'}}>98.8%</span> positive feedback</span><br/>
                 <span style={{fontSize: '14px', color:'#65605D'}}>Seller located in Auckland City, Auckland</span>
 

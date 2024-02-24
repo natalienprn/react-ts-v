@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import DealCard from "./DealCard";
 import './Carousel.css';
 
-import ArrowLeft from '/icon/arrow-left.png';
-import ArrowRight from '/icon/arrow-right.png'
+import IconArrowLeftGrey from '/icon/arrow-left.png';
+import IconArrowRightGrey from '/icon/arrow-right.png'
 import { Link } from "react-router-dom";
 import { CardData } from "../data/data";
 
@@ -61,21 +61,21 @@ const Carousel: React.FC<CarouselProps> = ({ cardData }) => {
     const [currentDeck, setCurrentDeck] = useState(0);
     const cardsToShow = 4;
 
-    const TotalCard = cardData.length;
-    const TotalDecks = Math.ceil(TotalCard / cardsPerDeck);
+    const totalCards = cardData.length;
+    const totalDecks = Math.ceil(totalCards / cardsPerDeck);
     const handlePrevDeck = () => {
-        setCurrentDeck((prevDeck) => (prevDeck > 0 ? prevDeck - 1 : TotalDecks - 1));
+        setCurrentDeck((prevDeck) => (prevDeck > 0 ? prevDeck - 1 : totalDecks - 1));
 
     };
 
     const handleNextDeck = () => {
-        setCurrentDeck((prevDeck) => (prevDeck < TotalDecks - 1 ? prevDeck + 1 : 0));
+        setCurrentDeck((prevDeck) => (prevDeck < totalDecks - 1 ? prevDeck + 1 : 0));
 
     };
 
-    const StartCardIndex = currentDeck * cardsPerDeck;
-    const EndCardIndex = StartCardIndex + cardsToShow;
-    const ShowingCards = cardData.slice(StartCardIndex, EndCardIndex);
+    const startIndexOfDeck = currentDeck * cardsPerDeck;
+    const endIndexOfDeck = startIndexOfDeck + cardsToShow;
+    const displayedCards = cardData.slice(startIndexOfDeck, endIndexOfDeck);
 
     // const updateCardsPerDeck = () => {
     //     const newCardWidth = calCardWidth();
@@ -109,7 +109,7 @@ const Carousel: React.FC<CarouselProps> = ({ cardData }) => {
         <div className="carousel-wrapper">
             <div className="carousel">
 
-                {ShowingCards.map((card, index) => (
+                {displayedCards.map((card, index) => (
                     // <DealCard key={index} data={card}/>
                     <Link to={`/product/${card.id}`} key={index}>
                         <DealCard data={card} />
@@ -118,10 +118,10 @@ const Carousel: React.FC<CarouselProps> = ({ cardData }) => {
             </div>
             <div className="arrows-inside">
                 <button className="arrow-left" onClick={handlePrevDeck}>
-                    <img src={ArrowLeft} />
+                    <img src={IconArrowLeftGrey} />
                 </button>
                 <button className="arrow-right" onClick={handleNextDeck}>
-                    <img src={ArrowRight} />
+                    <img src={IconArrowRightGrey} />
                 </button>
             </div>
             

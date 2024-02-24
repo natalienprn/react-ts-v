@@ -3,7 +3,6 @@
   height: auto;
 }
 .footer{
-  
     width: 100%;
     border-top: 8px solid #d93a3f;
     height: auto;
@@ -14,7 +13,6 @@
     padding-top: 24px;
     padding-bottom: 0px;
     padding: 24px 24px 0px 24px;
-    /* display: none; */
     color: #85808C;
   }
   .footer-content-top{
@@ -43,7 +41,6 @@
     width: fit-content;
   }
   .footer-main{
-    /* display: none; */
     font-size: 12px;
     height: auto;
     padding-top: 24px;

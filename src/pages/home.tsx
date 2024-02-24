@@ -6,7 +6,7 @@ import './home.css'
 import cardData from '../data/data'
 import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
-import CateItem from '../data/catelist'
+import CateItem from '../data/cateList'
 import Carousel from '../component/Carousel'
 // import SearchPage from './searchpage'
 // import { Link } from 'react-router-dom'
@@ -14,12 +14,9 @@ import Carousel from '../component/Carousel'
 import { useNavigate, createSearchParams } from 'react-router-dom'
 
 
-
-
 function Home() {
   const [keyword, setKeyword] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('');
-  // const history = createHashHistory();
   const navigate = useNavigate();
 
   // function handleSearch(event: FormEvent<HTMLFormElement>) {
@@ -36,7 +33,6 @@ function Home() {
     console.log(`Searching for: ${keyword}`);
     console.log('Selected Category:', selectedCategory);
     if (selectedCategory){
-      //  history.push(`/result/${selectedCategory}`);
       navigate({
         pathname: `/result/${selectedCategory}`,
         search: createSearchParams({keyword}).toString()

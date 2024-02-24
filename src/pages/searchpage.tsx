@@ -4,7 +4,7 @@ import './searchpage.css'
 
 // import cardData from '../data/data'
 import cardData, { CardData } from '../data/data';
-import CateItem from '../data/catelist'
+import CateItem from '../data/cateList'
 
 import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
@@ -69,12 +69,6 @@ function SearchPage() {
         </div>
         <div className='search-header-wrapper'>
             <div className='search-header'>
-            {/* {ShowingCards.map((card, index) => (
-                    // <DealCard key={index} data={card}/>
-                    <Link to={`/product/${card.id}`} key={index}>
-                        <DealCard data={card} />
-                    </Link>
-                ))} */}
                 <div className='cate-topic'>{currentCategory.item}</div>
                 <div className='cate-description'>
                 {currentCategory.description}
@@ -88,8 +82,6 @@ function SearchPage() {
                     Search                        
                     </button>
                 </div>
-                
-                
 
             </div>
 

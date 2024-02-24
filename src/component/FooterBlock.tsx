@@ -1,17 +1,10 @@
 
-// import React from 'react';
 import './FooterBlock.css';
-// import { Link } from 'react-router-dom';
-// import { CardData } from '../data/data';
 
 import TrademeLogo from '/trademe-logo.jpg';
-
-
-import shieldedsiteLogo from '/custom-logo.png';
-import facebookLogo from '/facebook-icon.svg';
-import twitterLogo from '/twitter-icon.svg';
-
-
+import ShieldedSiteLogo from '/custom-logo.png';
+import FacebookLogo from '/facebook-icon.svg';
+import TwitterLogo from '/twitter-icon.svg';
 
 const FooterBlock = () => {
   return (
@@ -104,11 +97,11 @@ const FooterBlock = () => {
             <li>Contact Us</li>
           </ul>
         </div>
-        <div className='footer-under-middle'> <img className='footer-icon' src={shieldedsiteLogo} /></div>
+        <div className='footer-under-middle'> <img className='footer-icon' src={ShieldedSiteLogo} /></div>
         <div className='footer-under'>
           <ul>
-            <li><img className='footer-icon' src={facebookLogo} /></li>
-            <li><img className='footer-icon' src={twitterLogo} /></li>
+            <li><img className='footer-icon' src={FacebookLogo} /></li>
+            <li><img className='footer-icon' src={TwitterLogo} /></li>
           </ul>
         </div>
 

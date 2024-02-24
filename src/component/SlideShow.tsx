@@ -1,8 +1,8 @@
 import './SlideShow.css'
 
 import React, { useState } from 'react';
-import ArrowLeftIcon from '/icon/arrow-left-white-50.png';
-import ArrowRightIcon from '/icon/arrow-right-white-50.png';
+import IconArrowLeftWhite from '/icon/arrow-left-white-50.png';
+import IconArrowRightWhite from '/icon/arrow-right-white-50.png';
 
 interface SlideshowProps {
   images: string[];
@@ -29,10 +29,10 @@ const SlideShow: React.FC<SlideshowProps> = ({ images }) => {
         <img src={images[currentImageIndex]} alt={`Shop`} />
         <div className="navigation-arrows">
         <span className="arrow-left-big" onClick={handlePrevClick}>
-          <img src={ArrowLeftIcon}/>
+          <img src={IconArrowLeftWhite}/>
         </span>
         <span className="arrow-right-big" onClick={handleNextClick}>
-          <img src={ArrowRightIcon}/>
+          <img src={IconArrowRightWhite}/>
         </span>
       </div>
       </div>

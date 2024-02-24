@@ -75,40 +75,4 @@ button {
         position: absolute;
     }
 
-
-    /* .arrows{
-
-        position: absolute;
-    top: 50%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    transform: translateY(-50%);
-    z-index: 6;
-    left: 0;
-    }
-
-    .arrow-left img,
-    .arrow-right img {
-
-        background-color: rgba(169, 169, 169, 0.5);
-        width: 50px;
-        height: 50px;
-        
-        top: calc(50% - 25px);
-        position: absolute;
-    }
-
-    .arrow-left,
-    .arrow-left img {
-        left: 0px;
-    }
-
-    .arrow-right,
-    .arrow-right img {
-        
-        right: 0px;
-       
-    } */
-
 }

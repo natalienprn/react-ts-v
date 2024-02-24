@@ -2,7 +2,7 @@ import React from 'react';
 import './ProductCard.css';
 import { CardData } from '../data/data';
 
-import shippingIcon from '/icon/shipping-96.png';
+import IconShipping from '/icon/shipping-96.png';
 
 interface ProductCardProps{
     data: CardData;
@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({data})=>{
                 </div>
                 {data.shippingInfo && (
                   <div className='prod-ship-info'>
-                    <img src={shippingIcon}/>
+                    <img src={IconShipping}/>
                   {data.shippingInfo}
                 </div>
                 )}
