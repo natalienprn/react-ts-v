@@ -5,6 +5,7 @@ export interface CardData {
     productName: string;
     productImg: string[];
     description: string;
+    categoryID: number;
     city: string;
     closeDate: string;
     shippingInfo: string;
@@ -41,7 +42,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$4,989',
         currentPrice: '$3,899',
-    
+        categoryID: 1,
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -96,7 +97,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$2,990',
         currentPrice: '$1,989',
-       
+        categoryID: 2,
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -145,7 +146,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$3,990',
         currentPrice: '$2,990',
-        
+        categoryID: 3,
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -182,7 +183,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '',
         currentPrice: '$2,990',
-        
+        categoryID: 4,
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -233,7 +234,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$10,824',
         currentPrice: '$4,990',
-       
+        categoryID: 5,
         shopName: 'string',
         condition: 'New',
         memory: '',
@@ -291,7 +292,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$1,200',
         currentPrice: '$1,500',
-        
+        categoryID: 6,
         shopName: 'string',
         condition: 'New',
         memory: '16 to 31 GB',
@@ -325,7 +326,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$590.99',
         currentPrice: '$323.00',
-        
+        categoryID: 7,
         shopName: 'string',
         condition: 'new',
         memory: '',
@@ -367,7 +368,7 @@ const cardData: CardData[] = [
         proStatus: 'Buy Now',
         oldPrice: '$4,999',
         currentPrice: '$3,999',
-        
+        categoryID: 8,
         shopName: 'string',
         condition: 'new',
         memory: '',

@@ -1,5 +1,5 @@
 
-import { FormEvent, useState } from 'react'
+import { FormEvent, useState, useEffect } from 'react'
 import './info.css'
 import './home.css'
 
@@ -8,15 +8,18 @@ import TopBar from '../component/TopBar'
 import FooterBlock from '../component/FooterBlock'
 import CateItem from '../data/cateList'
 import Carousel from '../component/Carousel'
+import { searchProducts } from '../commonLogic/SearchLogic'
 // import SearchPage from './searchpage'
 // import { Link } from 'react-router-dom'
 // import { createHashHistory } from 'history'
 import { useNavigate, createSearchParams } from 'react-router-dom'
+// import { searchProducts } from '../commonLogic/search'
 
+import { CardData } from '../data/data'
 
 function Home() {
   const [keyword, setKeyword] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState<number>(1);
   const navigate = useNavigate();
 
   // function handleSearch(event: FormEvent<HTMLFormElement>) {
@@ -24,7 +27,12 @@ function Home() {
   //   console.log(`Searching for: ${keyword}`);
   //   // history.push(`/result`, { categoryId: selectedCategory });
   //   history.push(`/result/${selectedCategory}`);
-
+//   const [CateItem, setCateItem] = useState<CateItem[]>([]); // Assuming you have state for categories
+  const [products, setProducts] = useState<CardData[]>([]); // Assuming you have state for products
+//   useEffect(() => {
+//     // Set CateItem data here
+//     setCateItem(CateItem);
+// }, []);
 
   // }
   function handleSearch(event: FormEvent<HTMLFormElement>) {
@@ -33,12 +41,20 @@ function Home() {
     console.log(`Searching for: ${keyword}`);
     console.log('Selected Category:', selectedCategory);
     if (selectedCategory){
+     
       navigate({
         pathname: `/result/${selectedCategory}`,
         search: createSearchParams({keyword}).toString()
       });
       console.log('it is push this id: ', selectedCategory);
       }
+    else{
+      const filteredProducts = searchProducts(products, keyword, selectedCategory);
+
+      const searchParams = createSearchParams({ keyword, category: String(selectedCategory) }).toString();
+      navigate(`/result/${searchParams}`);
+    }
+      
    
   }
   
@@ -81,7 +97,7 @@ function Home() {
                 <select name='category' 
                 id='category'
                 value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value)}>
+                onChange={(e) => setSelectedCategory(Number(e.target.value))}>
                   <option value=''>Select a category</option>
                   {CateItem.map((item) => (
                     <option key={item.id} value={item.id}>{item.item}</option>
