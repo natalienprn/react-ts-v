@@ -6,12 +6,11 @@ import { CardData } from '../data/data';
 import TrademeLogo from '/trademe-logo.jpg';
 import TrademeLogoSmall from '/logo-small.png';
 import { useState, useRef } from 'react';
-// import CateItem from '../data/CateList';
-// import BrowseItem from '../data/BrowseList';
+
 import CateItem from '../data/cateList';
 import BrowseItem from '../data/browseList';
 
-import { searchProducts } from '../commonLogic/search'
+import { searchProducts } from '../commonLogic/SearchLogic';
 
 import IconArrowGrey from '/icon/arrow-down-gr.png';
 import IconArrowWhite from '/icon/arrow-down-24-wh.png';
@@ -26,8 +25,8 @@ import IconNavBarUser from '/icon/user-96.png';
 const TopBar:React.FC = ()=>{
   const[BrowseDropdown, setBrowseDropdown] = useState(false);
   const[BrowseMpDropdown, setBrowseMpDropdown] = useState(false);
-  const [CateItem, setCateItem] = useState<CateItem[]>([]); // Assuming you have state for categories
-  const [products, setProducts] = useState<CardData[]>([]); // Assuming you have state for products
+  const [CateItem, setCateItem] = useState<CateItem[]>([]); 
+  const [products, setProducts] = useState<CardData[]>([]); 
 
   const DropdownRef = useRef<HTMLDivElement>(null);
   const MpDropdownRef = useRef<HTMLDivElement>(null);
