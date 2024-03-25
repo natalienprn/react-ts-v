@@ -8,8 +8,8 @@ import TrademeLogo from "/trademe-logo.jpg";
 import TrademeLogoSmall from "/logo-small.png";
 import { useState, useRef } from "react";
 
-import CateItem from "../data/cateList";
-import BrowseItem from "../data/browseList";
+import CateItem from "../data/categoryList";
+import BrowseItem from "../data/browseCateList";
 
 // import { searchProducts } from '../commonLogic/SearchLogic';
 
@@ -119,10 +119,7 @@ const TopBar: React.FC = () => {
                         {BrowseItem.slice(
                           1 + columnIndex * ddEachColumnB,
                           1 + (columnIndex + 1) * ddEachColumnB
-                        ).map((item) => (
-                          // <Link to={`/result/${item.id}`}>
-                          //   <a key={item.id}>{item.item}</a>
-                          // </Link>
+                        ).map((item) => (                      
                           <a key={item.id} onClick={()=> handleCategorySeach(item.id)}>{item.item}</a>
                         ))}
                       </div>

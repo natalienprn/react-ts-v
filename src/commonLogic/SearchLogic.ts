@@ -16,3 +16,9 @@ export function searchProducts(
   console.log("search function result: ", filteredProducts);
   return Promise.resolve(filteredProducts);
 }
+// export function browseCategory(
+//   category: number
+//   ):Promise<CardData[]>{
+//     const 
+//   }
+// )

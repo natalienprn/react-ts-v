@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import "./searchpage.css";
 
 import  { CardData } from "../data/data";
-import CateItem from "../data/cateList";
+// import CateItem from "../data/categoryList";
+import AllCateItem from "../data/allCategoryList";
 import { searchProducts } from "../commonLogic/SearchLogic";
 import { FormEvent } from "react";
 
@@ -32,7 +33,7 @@ function SearchPage() {
   const [categoryDescription, setCategoryDescription] = useState<string>("");
 
   useEffect(() => {
-    const category = CateItem.find((category) => category.id === categoryId);
+    const category = AllCateItem.find((category) => category.id === categoryId);
     const categoryName = category ? category.item : "Unknown Category";
     const categoryDetail = category ? category.description : "No deails";
 

@@ -5,9 +5,9 @@ import "./home.css";
 import cardData from "../data/data";
 import TopBar from "../component/TopBar";
 import FooterBlock from "../component/FooterBlock";
-import CateItem from "../data/cateList";
+import CateItem from "../data/categoryList";
 import Carousel from "../component/Carousel";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { pageNavigation } from "../commonLogic/NavigationUtils";
 
 import { useNavigate, createSearchParams } from "react-router-dom";
