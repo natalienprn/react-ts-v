@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "./searchpage.css";
 
-import cardData, { CardData } from "../data/data";
+import  { CardData } from "../data/data";
 import CateItem from "../data/cateList";
 import { searchProducts } from "../commonLogic/SearchLogic";
+import { FormEvent } from "react";
 
 import TopBar from "../component/TopBar";
 import FooterBlock from "../component/FooterBlock";
@@ -11,7 +12,6 @@ import {
   Link,
   useLocation,
   useParams,
-  useSearchParams,
 } from "react-router-dom";
 import ProductCard from "../component/ProductCard";
 import { extractParamsFromUrl } from "../commonLogic/FindParam";
@@ -19,7 +19,7 @@ import { extractParamsFromUrl } from "../commonLogic/FindParam";
 function SearchPage() {
   const { id } = useParams();
   const query = extractParamsFromUrl().keyword;
-  const [keyword, setKeyword] = useState("");
+  const [keyword, setKeyword2] = useState("");
 
   const location = useLocation();
   const [searchResults, setSearchResults] = useState<CardData[]>([]);
@@ -37,12 +37,27 @@ function SearchPage() {
     const categoryDetail = category ? category.description : "No deails";
 
     setCurrentCategory(categoryName);
+    console.log('useEffect: current category: ', categoryName);
+
     setCategoryDescription(categoryDetail);
+    console.log('useEffect: category desc: ', categoryDescription);
+    
     searchProducts(query, categoryId).then((results) => {
       setSearchResults(results);
+      console.log('useEffect: searchProducts');
       // setLoading(false);
     });
   }, [location.search]);
+
+  function handleSearch(){
+    searchProducts(keyword , categoryId).then((result)=>{
+      console.log('handleSearch Keyword: ', keyword);
+      setSearchResults(result);
+      console.log('HandleSearch Result: ', result);
+    }
+    )
+
+  }
 
   return (
     <>
@@ -64,10 +79,10 @@ function SearchPage() {
                 className="input"
                 type="text"
                 value={keyword}
-                onChange={(e) => setKeyword(e.target.value)}
+                onChange={(e) => setKeyword2(e.target.value)}
                 placeholder="Search by keyword"
               ></input>
-              <button className="search-button">Search</button>
+              <button className="search-button" onClick={handleSearch}>Search</button>
             </div>
           </div>
         </div>

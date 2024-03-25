@@ -7,26 +7,45 @@ import TopBar from "../component/TopBar";
 import FooterBlock from "../component/FooterBlock";
 import CateItem from "../data/cateList";
 import Carousel from "../component/Carousel";
+import { Link } from "react-router-dom";
+import { pageNavigation } from "../commonLogic/NavigationUtils";
 
 import { useNavigate, createSearchParams } from "react-router-dom";
 
-import { CardData } from "../data/data";
+// import { CardData } from "../data/data";
 
 function Home() {
   const [keyword, setKeyword] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<number>(1);
   const navigate = useNavigate();
 
-  // for recommend products to show
-  const [products, setProducts] = useState<CardData[]>([]);
+  const {handleSearch} = pageNavigation();
 
-  function handleSearch(event: FormEvent<HTMLFormElement>) {
+  // const {handleSearch} = useNavigate();
+  
+
+  // for recommend products to show
+  // const [products, setProducts] = useState<CardData[]>([]);
+
+  function handleCategorySeach(categoryID: number){
+    console.log("cateSearch: ", categoryID);
+    navigate({
+      pathname: `/result/${categoryID}`,
+      search: createSearchParams({ keyword }).toString(),
+    });
+    
+    // handleSearch(categoryID, keyword);
+  }
+
+  function handleSearchBlock(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (selectedCategory) {
       navigate({
         pathname: `/result/${selectedCategory}`,
         search: createSearchParams({ keyword }).toString(),
       });
+      
+      // handleSearch(selectedCategory, keyword);
       // searchProducts(keyword, selectedCategory);
       // createSearchParams({ keyword, category: String(selectedCategory) }).toString();
 
@@ -54,7 +73,7 @@ function Home() {
         </div>
         <div className="search-section">
           <div className="search-block">
-            <form onSubmit={handleSearch}>
+            <form onSubmit={handleSearchBlock}>
               <div className="search-by-kw">
                 <label className="search-heading">
                   Search by keyword
@@ -120,7 +139,9 @@ function Home() {
           <div className="cate-list">
             <ul>
               {CateItem.slice(1).map((item) => (
-                <li key={item.id}>{item.item}</li>
+                <li key={item.id} onClick={() => handleCategorySeach(item.id)}>
+                  {item.item}
+                  </li>
               ))}
             </ul>
           </div>
